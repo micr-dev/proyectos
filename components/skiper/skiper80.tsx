@@ -141,7 +141,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
   const [titleCloseDone, setTitleCloseDone] = useState(false);
   const [imageCloseDone, setImageCloseDone] = useState(false);
   const [closingTitleScrollOffset, setClosingTitleScrollOffset] = useState(0);
-  const [, setLoadedImageVersion] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(() => new Set());
   const previewImageRef = useRef<HTMLImageElement | null>(null);
   const detailTitleMeasureRef = useRef<HTMLDivElement | null>(null);
   const detailTitleRef = useRef<HTMLHeadingElement | null>(null);
@@ -180,7 +180,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
   const activeDisplayTitle = activeItem ? getRepoDisplayTitle(activeItem.title) : "";
   const isMicrosoftHackathonProject = activeItem?.title.startsWith("ms26/") ?? false;
   const isActiveImageLoaded = activeItem
-    ? loadedImagesRef.current.has(activeItem.image)
+    ? loadedImages.has(activeItem.image)
     : false;
 
   const markImageLoaded = useCallback((src: string) => {
@@ -189,7 +189,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
     }
 
     loadedImagesRef.current.add(src);
-    setLoadedImageVersion((version) => version + 1);
+    setLoadedImages(new Set(loadedImagesRef.current));
   }, []);
 
   const preloadImage = useCallback((src: string, priority: "high" | "low" = "low") => {
@@ -379,9 +379,11 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
 
   useLayoutEffect(() => {
     if (isItemActive == null) {
-      setTargetTitleSnapshot(null);
-      setTargetImageSnapshot(null);
-      return;
+      const frameId = window.requestAnimationFrame(() => {
+        setTargetTitleSnapshot(null);
+        setTargetImageSnapshot(null);
+      });
+      return () => window.cancelAnimationFrame(frameId);
     }
 
     const frameId = window.requestAnimationFrame(() => {
@@ -430,9 +432,13 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
       return;
     }
 
-    resetClosingAnimationState();
-    setIsItemActive(null);
-    resetOpeningSnapshots();
+    const frameId = window.requestAnimationFrame(() => {
+      resetClosingAnimationState();
+      setIsItemActive(null);
+      resetOpeningSnapshots();
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
   }, [
     closingImageTarget,
     closingImageSource,
@@ -451,8 +457,10 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
 
     if (!isClosing) {
       closingTitleScrollOriginRef.current = window.scrollY;
-      setClosingTitleScrollOffset(0);
-      return;
+      const idleFrameId = window.requestAnimationFrame(() => {
+        setClosingTitleScrollOffset(0);
+      });
+      return () => window.cancelAnimationFrame(idleFrameId);
     }
 
     closingTitleScrollOriginRef.current = window.scrollY;
