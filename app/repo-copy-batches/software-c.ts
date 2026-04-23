@@ -27,9 +27,9 @@ export const softwareBatchC = {
   },
   traccia: {
     paragraphs: [
-      "Traccia convierte archivos personales en un grafo de habilidades que explica de dónde viene una habilidad, qué tan profunda es, qué tan actual está y qué tan central es dentro del archivo general.",
-      "La mayoría de herramientas de archivo son buenas almacenando material pero malas contando la historia de las habilidades, mientras que las herramientas de perfil lo aplanan todo en un pitch y descartan el rastro de evidencia.",
-      "La CLI ingiere notas, código, documentos, chats de IA y datos exportados de plataformas sin tocar los archivos originales, luego renderiza un grafo con marcas temporales y comandos para explicar, revisar y exportar. Incluye una CLI en Python y un wrapper npm para entornos basados en Node.",
+      "Traccia convierte archivos personales en un grafo de habilidades autoexplicativo que rastrea de dónde viene una habilidad, qué tan profunda es, qué tan actual está y qué tan central es dentro del archivo general.",
+      "La mayoría de herramientas de archivo almacenan bien el material pero no pueden contar la historia de las habilidades, mientras que las herramientas de perfil lo aplanan todo en un pitch, aplanan la incertidumbre y descartan el rastro de evidencia necesario para verificar las afirmaciones.",
+      "La CLI en Python ingiere fuentes variadas a través de adaptadores específicos para Google Takeout, Twitter, Reddit y exportaciones de Meta, con normalización local de PDF y DOCX mediante marker y docling y backends OCR opcionales.",
     ],
     languages: ["Python", "JavaScript"],
   },
