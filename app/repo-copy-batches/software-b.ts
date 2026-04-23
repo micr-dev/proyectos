@@ -7,7 +7,7 @@ export const softwareBatchB = {
       "La mayoría de CLIs de búsqueda reescriben consultas o fuerzan heurísticas de clasificación, así que gitquarry mantiene la semántica nativa intacta y convierte los modos mejorados en opt-in para flujos interactivos y de scripting.",
       "Construido en Rust con binarios multiplataforma, wrapper npm, soporte para Homebrew, Scoop y Nix, usa almacenamiento de tokens por host, modos de salida estructurados y enriquecimiento de README para conectar el uso interactivo con pipelines de shell.",
     ],
-    languages: ["Rust", "JavaScript", "Ruby", "Nix", "Shell"],
+    languages: ["Rust", "Python", "JavaScript", "Ruby", "Nix", "Shell"],
   },
   "goofish-watcher": {
     paragraphs: [
