@@ -19,7 +19,7 @@ export const mcpsSkillsBatch = {
   },
   "chatgpt-webui-mcp": {
     paragraphs: [
-      "chatgpt-webui-mcp automatiza chatgpt.com a través de camofox para que los clientes de MCP puedan ejecutar prompts de GPT-5.2 Pro, generación de imágenes e investigación de larga duración sin manipulación manual del navegador.",
+      "chatgpt-webui-mcp automatiza chatgpt.com a través de camofox para que los clientes de MCP puedan ejecutar prompts de GPT-4o, generación de imágenes e investigación de larga duración sin manipulación manual del navegador.",
       "Las tareas de investigación profunda y de generación de imágenes superan los tiempos de espera habituales, así que los equipos necesitaban una interfaz de automatización fiable que respetara el sistema de tokens de sesión ya existente.",
       "Lo resuelve pasando los tokens de sesión por variables de entorno, exponiendo herramientas de lenguaje natural para prompts y ejecuciones unificadas, y ofreciendo utilidades de larga duración junto con plantillas de despliegue SSE.",
     ],

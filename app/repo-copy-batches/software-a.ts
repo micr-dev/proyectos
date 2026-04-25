@@ -35,7 +35,7 @@ export const softwareBatchA = {
   },
   "bolify": {
     paragraphs: [
-      "Boilify es un plugin OpenFX para DaVinci Resolve 20+ que simula el temblor de línea típico de la animación dibujada a mano con controles de intensidad, tamaño, velocidad y complejidad.",
+      "Boilify es un plugin OpenFX para DaVinci Resolve 19+ que simula el temblor de línea típico de la animación dibujada a mano con controles de intensidad, tamaño, velocidad y complejidad.",
       "Está pensado para editores que quieren ese efecto artesanal sin tener que construir un efecto personalizado para Resolve, con una implementación centrada en el render multihilo, el ajuste fino de parámetros y la conservación del alfa.",
       "La compilación en C++ y CMake enlaza con el SDK de OpenFX y añade un ajustador en el navegador para previsualizar los cambios antes de copiar los valores por defecto al bundle."
     ],
