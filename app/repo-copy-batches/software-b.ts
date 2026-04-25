@@ -25,7 +25,7 @@ export const softwareBatchB = {
     ],
     languages: ["Python"],
   },
-  "hermes-dayshift-glm": {
+  "hermes-dayshift": {
     paragraphs: [
       "Hermes-dayshift-glm es el implementador supervisado por humanos que acompaña a hermes-nightshift-glm: analiza sus incidencias y PR, los clasifica y los coloca en un tablero kanban local para triaje manual.",
       "Como nightshift funciona en piloto automático y genera ruido además de señal, dayshift añade un paso de filtro humano donde las tarjetas deben moverse a carriles de ejecución explícitos antes de que ningún agente actúe.",
