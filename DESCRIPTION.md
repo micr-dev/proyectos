@@ -1,5 +1,7 @@
 # Description Rules
 
+**Note:** All description copy must be written in Spanish, as the site renders in Spanish.
+
 Use this file when writing portfolio descriptions for repository entries in this site.
 
 ## Goal
