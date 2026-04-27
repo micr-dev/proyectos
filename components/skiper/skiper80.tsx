@@ -379,11 +379,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
 
   useLayoutEffect(() => {
     if (isItemActive == null) {
-      const frameId = window.requestAnimationFrame(() => {
-        setTargetTitleSnapshot(null);
-        setTargetImageSnapshot(null);
-      });
-      return () => window.cancelAnimationFrame(frameId);
+      return;
     }
 
     const frameId = window.requestAnimationFrame(() => {
@@ -615,14 +611,20 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
     return null;
   }
 
+  // Keep stale snapshots inert when no item is active so close/open transitions
+  // don't consume one-frame-old coordinates.
+  const activeTargetTitleSnapshot =
+    isItemActive == null ? null : targetTitleSnapshot;
+  const activeTargetImageSnapshot =
+    isItemActive == null ? null : targetImageSnapshot;
   const hasPendingTitleAnimation =
     isItemActive != null && sourceTitleSnapshot != null;
   const shouldAnimateTitle =
-    hasPendingTitleAnimation && targetTitleSnapshot != null;
+    hasPendingTitleAnimation && activeTargetTitleSnapshot != null;
   const hasPendingImageAnimation =
     isItemActive != null && sourceImageSnapshot != null;
   const shouldAnimateImage =
-    hasPendingImageAnimation && targetImageSnapshot != null;
+    hasPendingImageAnimation && activeTargetImageSnapshot != null;
   const shouldAnimateClosingTitle =
     isClosing && closingTitleSource != null && closingTitleTarget != null;
   const shouldAnimateClosingImage =
@@ -772,31 +774,31 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
                 }}
                 animate={{
                   top: shouldAnimateTitle
-                    ? targetTitleSnapshot.top
+                    ? activeTargetTitleSnapshot.top
                     : sourceTitleSnapshot.top,
                   left: shouldAnimateTitle
-                    ? targetTitleSnapshot.left
+                    ? activeTargetTitleSnapshot.left
                     : sourceTitleSnapshot.left,
                   width: shouldAnimateTitle
-                    ? targetTitleSnapshot.width
+                    ? activeTargetTitleSnapshot.width
                     : sourceTitleSnapshot.width,
                   height: shouldAnimateTitle
-                    ? targetTitleSnapshot.height
+                    ? activeTargetTitleSnapshot.height
                     : sourceTitleSnapshot.height,
                   fontFamily: shouldAnimateTitle
-                    ? targetTitleSnapshot.fontFamily
+                    ? activeTargetTitleSnapshot.fontFamily
                     : sourceTitleSnapshot.fontFamily,
                   fontSize: shouldAnimateTitle
-                    ? targetTitleSnapshot.fontSize
+                    ? activeTargetTitleSnapshot.fontSize
                     : sourceTitleSnapshot.fontSize,
                   fontWeight: shouldAnimateTitle
-                    ? targetTitleSnapshot.fontWeight
+                    ? activeTargetTitleSnapshot.fontWeight
                     : sourceTitleSnapshot.fontWeight,
                   letterSpacing: shouldAnimateTitle
-                    ? targetTitleSnapshot.letterSpacing
+                    ? activeTargetTitleSnapshot.letterSpacing
                     : sourceTitleSnapshot.letterSpacing,
                   lineHeight: shouldAnimateTitle
-                    ? targetTitleSnapshot.lineHeight
+                    ? activeTargetTitleSnapshot.lineHeight
                     : sourceTitleSnapshot.lineHeight,
                   opacity: 1,
                 }}
@@ -836,19 +838,19 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
                 }}
                 animate={{
                   top: shouldAnimateImage
-                    ? targetImageSnapshot.top
+                    ? activeTargetImageSnapshot.top
                     : sourceImageSnapshot.top,
                   left: shouldAnimateImage
-                    ? targetImageSnapshot.left
+                    ? activeTargetImageSnapshot.left
                     : sourceImageSnapshot.left,
                   width: shouldAnimateImage
-                    ? targetImageSnapshot.width
+                    ? activeTargetImageSnapshot.width
                     : sourceImageSnapshot.width,
                   height: shouldAnimateImage
-                    ? targetImageSnapshot.height
+                    ? activeTargetImageSnapshot.height
                     : sourceImageSnapshot.height,
                   borderRadius: shouldAnimateImage
-                    ? targetImageSnapshot.borderRadius
+                    ? activeTargetImageSnapshot.borderRadius
                     : sourceImageSnapshot.borderRadius,
                   opacity: 1,
                 }}
