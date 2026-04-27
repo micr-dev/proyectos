@@ -57,6 +57,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "Shell", "PowerShell", "JavaScript"],
   },
+  micromail: {
+    paragraphs: [
+      "Micromail es un servicio de correo temporal autoalojado construido con Next.js que convierte una única bandeja de Gmail en direcciones desechables ilimitadas leyendo el correo catch-all del dominio a través de la API de Gmail.",
+      "Los proveedores de correo temporal existentes requieren ceder el acceso de tus dominios a terceros o obligan a usar su infraestructura, así que micromail mantiene todo en tu propio dominio con un catch-all de Google Workspace que ya controlas.",
+      "El frontend sondea cada 5 segundos para actualizaciones en tiempo real del buzón, soporta configuraciones multidominio mediante variables de entorno, autentica el acceso a la API con claves configurables e incluye documentación interactiva de Scalar en `/docs` junto con una especificación OpenAPI 3.1.",
+    ],
+    languages: ["TypeScript", "CSS", "JavaScript"],
+  },
   nagrom: {
     paragraphs: [
       "Nagrom es un bot de Discord autoalojable que pasa las afirmaciones por un proceso escalonado de verificación de hechos, fuerza salidas en JSON y guarda cada veredicto en SQLite.",
