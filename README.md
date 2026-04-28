@@ -6,7 +6,43 @@ Portafolio Next.js de proyectos personales.
 
 - Next.js 16
 - TypeScript
-- CSS Modules
+- Tailwind CSS 4
+- Framer Motion
+- Lenis
+
+## Acerca de
+
+Este repositorio contiene los datos que impulsa el portafolio de proyectos en [proyectos.micr.dev](https://proyectos.micr.dev). Es un repositorio de datos que actúa como fuente canónica de metadatos, descripciones y categorización.
+
+## Estructura
+
+```
+proyectos/
+├── REPO.md                    # Lista de repositorios organizada por categoría
+├── DESCRIPTION.md             # Guía para escribir descripciones
+├── app/
+│   ├── repo-descriptions.ts   # Descripciones de proyectos
+│   ├── repo-description-types.ts # Tipos de descripción
+│   ├── repo-metadata.ts       # Metadatos (repo URL, live preview, privacidad)
+│   ├── repo-images.ts         # Mapa de miniaturas
+│   ├── repo-sections.ts       # Lógica de agrupamiento por sección
+│   ├── repo-paths.ts          # Utilidades de rutas
+│   ├── smooth-scroll.tsx      # Wrapper de Lenis
+│   ├── portfolio-shell.tsx    # Layout principal
+│   └── repo-copy-batches/     # Descripciones divididas en batches temáticos
+├── components/
+│   └── skiper/                # Componente de navegación
+├── public/images/repo-thumbnails/  # Miniaturas de proyectos
+└── [...slug]/                 # Rutas dinámicas
+```
+
+## Flujo de datos
+
+1. **REPO.md** define qué proyectos aparecen y en qué categoría
+2. **repo-descriptions.ts** proporciona las descripciones de cada proyecto
+3. **repo-metadata.ts** proporciona URL del repo, live preview y estado de privacidad
+4. **repo-images.ts** mapea cada proyecto a su miniatura
+5. **repo-sections.ts** combina todo y genera las secciones para renderizar
 
 ## Acerca de
 
