@@ -1,8 +1,8 @@
 const placeholderImages = [
-  "/images/oct25Coll/skiperpro/shoreel-9.png",
-  "/images/oct25Coll/skiperpro/shoreel-8.png",
-  "/images/oct25Coll/skiperpro/shoreel-4.png",
-  "/images/oct25Coll/skiperpro/shoreel-5.png",
+  "/images/repo-thumbnails/micr.dev.webp",
+  "/images/repo-thumbnails/blog.webp",
+  "/images/repo-thumbnails/quarzite.webp",
+  "/images/repo-thumbnails/tokens.webp",
 ];
 
 const repoImages: Record<string, string> = {
