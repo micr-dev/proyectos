@@ -49,6 +49,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "CSS", "HTML", "JavaScript"],
   },
+  md2pkt: {
+    paragraphs: [
+      "md2pkt es una CLI para Windows que convierte asignaciones de red en Markdown o PDF de texto en archivos .pkt de Cisco Packet Tracer, normalizando las descripciones de topología en JavaScript PTBuilder y configuraciones IOS por dispositivo.",
+      "Los laboratorios de red a menudo empiezan como rúbricas de texto plano o asignaciones en PDF que requieren redibujar manualmente en Packet Tracer, así que md2pkt da a esas instrucciones un camino directo hacia una topología ejecutable sin edición intermedia.",
+      "Lee entradas .md, .txt y .pdf de texto, aplica valores predeterminados deterministas para los detalles faltantes, opcionalmente usa Codex para planificación en un turno, y envía las construcciones a través de un endpoint local de bridge de Packet Tracer.",
+    ],
+    languages: ["TypeScript", "JavaScript"],
+  },
   mullgate: {
     paragraphs: [
       "Mullgate es una CLI que convierte una suscripción de Mullvad en un conjunto gestionado de oyentes SOCKS5, HTTP y HTTPS autenticados, vinculados a alias de ruta explícitos.",
