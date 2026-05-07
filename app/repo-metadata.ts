@@ -234,6 +234,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  solecist: {
+    repo: "Microck/solecist",
+    sourceUrl: "https://github.com/Microck/solecist",
+    livePreviewUrl: null,
+    isPrivate: true,
+  },
   sincronizado: {
     repo: "Microck/sincronizado",
     sourceUrl: "https://github.com/Microck/sincronizado",

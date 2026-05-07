@@ -121,6 +121,14 @@ export const softwareBatchB = {
     ],
     languages: ["PowerShell", "Batchfile"],
   },
+  solecist: {
+    paragraphs: [
+      "Solecist es un bot de Discord que vigila los canales de debate configurados y señala las posibles falacias lógicas mientras ocurren, respondiendo con embeds compactos que nombran la falacia, citan la afirmación y explican por qué el razonamiento parece débil.",
+      "Los debates a menudo se desvían porque el mal razonamiento es más fácil de pasar por alto que los malos datos — un falso dilema, una apelación a la popularidad o un ad hominem pueden desviar un hilo sin parecer spam o abuso evidente.",
+      "Construido sobre discord.js con persistencia en SQLite, soporta endpoints compatibles con OpenAI como NVIDIA NIM, Ollama y vLLM, almacena en caché la clasificación de debate por canal y permanece en silencio durante el chat casual hasta que detecta un contexto con forma de argumento.",
+    ],
+    languages: ["TypeScript", "Dockerfile"],
+  },
   sincronizado: {
     paragraphs: [
       "La CLI `sinc` de Sincronizado mantiene tus archivos locales sincronizados con un VPS remoto para que los agentes de IA pesados se ejecuten allí mientras editas con tu editor local.",
