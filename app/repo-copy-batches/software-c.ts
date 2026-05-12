@@ -81,6 +81,14 @@ export const softwareBatchC = {
     ],
     languages: ["Python"],
   },
+  veskforge: {
+    paragraphs: [
+      "Veskforge es un gestor de compilación de escritorio no oficial para Vesktop que administra la compilación de plugins personalizados de Vencord, la validación de builds de escritorio y la configuración de Vesktop sin parchear los archivos instalados.",
+      "Los plugins personalizados de Vencord son exclusivamente de tiempo de compilación y Vesktop carga un bundle preconstruido, por lo que el flujo estable requiere construir un dist personalizado y apuntar Vesktop a él en lugar de editar el fuente manualmente en cada actualización.",
+      "La app Tauri gestiona un checkout de Vencord, instala plugins habilitados desde archivos locales, carpetas o fuentes Git en src/userplugins, valida los artefactos necesarios antes de aplicar y escribe el ajuste vencordDir de Vesktop preservando el resto del estado.",
+    ],
+    languages: ["Rust", "TypeScript", "CSS", "HTML"],
+  },
   vapora: {
     paragraphs: [
       "Vapora es una herramienta OSINT interactiva que mapea el grafo de amigos de una cuenta de Steam, enriquece los nodos con métricas y exporta CSV listos para Gephi, además de un informe de amigos probables.",
