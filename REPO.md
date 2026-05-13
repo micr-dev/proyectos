@@ -1,6 +1,7 @@
 # Lista de repositorios
 ## Software
 anonQ
+amigazo
 anydesk-legacy-bin
 archie
 bdss-club-website

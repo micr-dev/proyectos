@@ -1,6 +1,14 @@
 import type { RepoDescription } from "../repo-description-types";
 
 export const softwareBatchA = {
+  "amigazo": {
+    paragraphs: [
+      "amigazo es un bot de Discord escrito en Haskell que cuenta palabras configuradas en un servidor, clasifica usuarios por totales combinados y por palabra, y lanza palabras aleatorias a lo largo del día.",
+      "La mayoría de bots de conteo de palabras están sobrecargados de funciones irrelevantes o se limitan a una sola métrica, así que amigazo mantiene un alcance reducido: listas de palabras configurables, desgloses por usuario y lanzamientos aleatorios programados mediante comandos de barra.",
+      "Usa discord-haskell para la conexión al gateway y los comandos de barra con SQLite para la persistencia, y se ejecuta como un único contenedor Docker mediante docker compose."
+    ],
+    languages: ["Haskell", "Dockerfile"]
+  },
   "anonQ": {
     paragraphs: [
       "anonQ es una plataforma de preguntas y respuestas anónimas que puedes alojar tú mismo, hecha con Next.js y Tailwind, y publica las preguntas y respuestas de los visitantes en un feed público.",
