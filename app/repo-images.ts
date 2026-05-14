@@ -54,6 +54,7 @@ const repoImages: Record<string, string> = {
   "m-d/quarzite": "quarzite.webp",
   "m-d/proyectos": "proyectos.webp",
   "ms26/repatrol": "repatrol.webp",
+  revisor: "revisor.webp",
   "RPi4toNAS-Guide": "RPi4toNAS-Guide.webp",
   scudo: "scudo.webp",
   "seedance-skills": "seedance-skills.webp",

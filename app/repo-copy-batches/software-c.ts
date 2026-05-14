@@ -113,4 +113,12 @@ export const softwareBatchC = {
     ],
     languages: ["Python"],
   },
+  revisor: {
+    paragraphs: [
+      "Revisor es una CLI que clona pull requests y issues de GitHub en espacios de trabajo temporales, ejecuta codex con flujos de trabajo empaquetados y luego informa, parchea o abre un pull request según el comando.",
+      "Revisar, depurar y arreglar PRs e issues normalmente requiere clonar repos localmente, instalar dependencias y limpiar después, mientras que los agentes necesitan una salida JSON determinística y flags no interactivos.",
+      "La herramienta está escrita en Go con un launcher npm multiplataforma, usa gh para la metadata de GitHub y codex como motor de ejecución con flujos de trabajo de revisión, depuración y corrección empaquetados en el binario.",
+    ],
+    languages: ["Go", "JavaScript"],
+  },
 } as const satisfies Record<string, RepoDescription>;
