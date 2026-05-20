@@ -1,6 +1,7 @@
 # Lista de repositorios
 ## Software
 anonQ
+akron-discord
 amigazo
 anydesk-legacy-bin
 archie
