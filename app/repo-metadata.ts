@@ -6,17 +6,23 @@ export interface RepoMetadata {
 }
 
 export const repoMetadata: Record<string, RepoMetadata> = {
+  "akron-discord": {
+    repo: "Microck/akron-discord",
+    sourceUrl: "https://github.com/Microck/akron-discord",
+    livePreviewUrl: null,
+    isPrivate: false,
+  },
+  "akron-website": {
+    repo: "Microck/akron-website",
+    sourceUrl: "https://github.com/Microck/akron-website",
+    livePreviewUrl: null,
+    isPrivate: false,
+  },
   "m-d/about": {
     repo: "micr-dev/about",
     sourceUrl: "https://github.com/micr-dev/about",
     livePreviewUrl: null,
     isPrivate: false,
-  },
-  "akron-discord": {
-    repo: "Microck/akron-discord",
-    sourceUrl: "https://github.com/Microck/akron-discord",
-    livePreviewUrl: null,
-    isPrivate: true,
   },
   anonQ: {
     repo: "Microck/anonQ",
