@@ -32,5 +32,13 @@ export const hardwareBatch = {
       "Incluye los archivos de carcasa, peso trasero y placa junto con la lista de materiales, las notas del prototipo y las pruebas de sonido para que cualquiera pueda fabricarlo o ajustarlo con las mismas concesiones prácticas en mente."
     ],
     languages: ["CAD", "STEP", "DXF"]
+  },
+  "tgr03-prototype-plate": {
+    paragraphs: [
+      "TGR-03 PROTOTYPE Plate es un archivo de placa de aluminio de reemplazo para el teclado TGR-03 PROTOTYPE, distribuido como DXF listo para CNC.",
+      "El TGR-03 PROTOTYPE original se fabricó en tiradas limitadas y el fabricante no ofrece piezas de repuesto, dejando a los propietarios sin opción para cambiar el estilo de montaje.",
+      "La placa está dibujada como un único archivo DXF apto para mecanizado CNC o corte láser y puede requerir un lijado menor para encajar, tal como se indica en la documentación del repositorio."
+    ],
+    languages: ["DXF"]
   }
 } as const satisfies Record<string, RepoDescription>;
