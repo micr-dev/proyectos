@@ -24,6 +24,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  "m-d/ai": {
+    repo: "micr-dev/ai",
+    sourceUrl: "https://github.com/micr-dev/ai",
+    livePreviewUrl: "https://ai.micr.dev",
+    isPrivate: false,
+  },
   anonQ: {
     repo: "Microck/anonQ",
     sourceUrl: "https://github.com/Microck/anonQ",

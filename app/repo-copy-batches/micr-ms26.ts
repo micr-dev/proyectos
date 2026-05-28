@@ -9,6 +9,14 @@ export const micrMs26Batch = {
     ],
     languages: ["JavaScript", "CSS", "HTML"]
   },
+  "m-d/ai": {
+    paragraphs: [
+      "AI Stack es un sitio de referencia en dos paneles que muestra un registro de cambios junto a un inventario en vivo de modelos, harnesses, hooks, MCPs, herramientas CLI y habilidades en una interfaz oscura monocromática.",
+      "Seguir qué modelo fue promovido o qué hook fue modificado normalmente requiere revisar el historial de git y archivos de configuración dispersos sin una vista unificada.",
+      "El sitio está construido con HTML, CSS y JavaScript puro, usando resaltado cruzado para vincular entradas del registro con sus contrapartes en el stack, favicon animado, diálogos morph para previsualizar AGENTS.md y habilidades, y las tipografías Helvetica Neue y Commit Mono."
+    ],
+    languages: ["HTML", "CSS", "JavaScript"]
+  },
   "m-d/blog": {
     paragraphs: [
       "Blog es el sitio estático en Next.js para textos largos que replica el diseño de referencia mientras aloja contenido MDX local.",
