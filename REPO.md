@@ -42,6 +42,7 @@ mullgate
 micromail
 nagrom
 onairo
+old-f3
 opencode-studio
 openslate
 protoncode

@@ -89,6 +89,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "JavaScript", "CSS", "HTML"],
   },
+  "old-f3": {
+    paragraphs: [
+      "old f3 es un mod de cliente Fabric para Minecraft 1.21.10 que restaura la superposición de depuración F3 anterior a la 1.21.9, devolviendo coordenadas, datos de chunk, FPS y detalles de bloques en el diseño clásico.",
+      "La nueva pantalla de depuración sustituyó la superposición familiar por una superficie de personalización que muchos jugadores encontraban más difícil de leer durante el juego.",
+      "Funciona mediante un DebugHudMixin y un KeyboardMixin que interceptan la nueva pantalla y renderizan las líneas de texto originales, con un archivo de configuración opcional para ajustar la escala del GUI por separado.",
+    ],
+    languages: ["Java"],
+  },
   "opencode-studio": {
     paragraphs: [
       "Opencode-studio es la GUI de Next.js y Express que te permite alternar servidores MCP, editar habilidades y complementos, gestionar la autenticación y observar el uso sin editar manualmente el JSON de OpenCode.",
