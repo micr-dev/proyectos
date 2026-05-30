@@ -81,13 +81,21 @@ export const softwareBatchA = {
     ],
     languages: ["Python", "Shell", "Dockerfile"]
   },
-  "cinco": {
+  cinco: {
     paragraphs: [
       "Cinco convierte Discord en un CMS para tiendas estáticas al combinar comandos de barra con GitHub Gists, tokens cifrados, menús interactivos y subidas de imágenes a Catbox.",
       "Las tiendas necesitan una interfaz de administración segura y basada en botones, así que los permisos por rol, los asistentes con IA y la sincronización del gist en tiempo real evitan tener que montar paneles propios.",
-      "Cada comando descifra tokens, actualiza el JSON del gist y el bot de Discord dockerizado mantiene botones, permisos y sincronización acoplados al sitio desplegado."
+      "Cada comando descifra tokens, actualiza el JSON del gist y el bot de Discord dockerizado mantiene botones, permisos y sincronización acoplados al sitio desplegado.",
     ],
-    languages: ["TypeScript", "Dockerfile"]
+    languages: ["TypeScript", "Dockerfile"],
+  },
+  codexport: {
+    paragraphs: [
+      "codexport replica una configuración Codex canónica desde una máquina maestra a seguidores a través de un servicio HTTP accesible por Tailscale, manteniendo una única fuente de verdad sin comprometer secretos en GitHub.",
+      "Los operadores que mantienen configuraciones afinadas en una máquina necesitan los mismos ajustes en otras, pero copiar archivos de autenticación en texto plano o sincronizar repos manualmente no escala.",
+      "El maestro sirve un paquete con hash de contenido que incluye configuración, hooks, definiciones MCP y habilidades; los seguidores fijan la huella, descargan actualizaciones al inicio de sesión y reparan las rutas MCP automáticamente.",
+    ],
+    languages: ["JavaScript", "TypeScript"],
   },
   "dialogue-textbox": {
     paragraphs: [

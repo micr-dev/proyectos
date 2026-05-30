@@ -65,6 +65,14 @@ export const mcpsSkillsBatch = {
     ],
     languages: ["Python", "Markdown"],
   },
+  "gitquarry-mcp": {
+    paragraphs: [
+      "gitquarry-mcp es un servidor MCP stdio en Rust que envuelve el CLI de gitquarry, exponiendo herramientas de búsqueda, inspección, árbol, código y autenticación sin reimplementar la lógica del producto.",
+      "Los clientes MCP necesitaban la búsqueda estructurada y la inspección de código de gitquarry en su bucle de herramientas, pero duplicar el comportamiento del CLI en proceso rompería la paridad con las credenciales y las actualizaciones.",
+      "Usa rmcp con JSON Schema generado automáticamente a partir de tipos Rust, invoca el binario gitquarry instalado y expone todos los parámetros como argumentos nativos de MCP.",
+    ],
+    languages: ["Rust"],
+  },
   "claude-skills": {
     paragraphs: [
       "ordinary-claude-skills agrega cientos de paquetes y scripts de prompt de Claude en carpetas categorizadas con documentación de apoyo.",
