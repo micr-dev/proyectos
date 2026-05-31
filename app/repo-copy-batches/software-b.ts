@@ -9,6 +9,14 @@ export const softwareBatchB = {
     ],
     languages: ["Rust", "Python", "JavaScript", "Ruby", "Nix", "Shell"],
   },
+  "glm-quota-widget": {
+    paragraphs: [
+      "Glm-quota-widget es un servidor puente ligero que redirige las cuotas del plan de código de Z.ai GLM a un widget de iOS Scriptable en la pantalla de inicio, manteniendo la clave API en la máquina anfitriona y exponiendo solo un endpoint HTTP protegido por token.",
+      "Consultar las ventanas de tokens de GLM y el uso de MCP implica abrir el panel de Z.ai cada vez, por lo que el puente normaliza la respuesta de la API de monitorización en un payload JSON compacto y apto para widgets que se actualiza cada cinco minutos.",
+      "El servidor Node.js lee la configuración de variables de entorno, soporta la fusión de varias cuentas mediante claves separadas por comas, se instala como servicio systemd con soporte para Tailscale y elimina campos sensibles antes de reenviar los datos al widget.",
+    ],
+    languages: ["JavaScript", "Shell"],
+  },
   "goofish-watcher": {
     paragraphs: [
       "Goofish-watcher es un asistente integrado en Discord que automatiza el login por QR de Goofish, exporta el `storage_state` de Playwright y reenvía los eventos de ai-goofish-monitor como mensajes directos.",
