@@ -5,6 +5,12 @@ import Lenis from "lenis";
 
 export default function SmoothScroll() {
   useEffect(() => {
+    const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
+
+    if (isCoarsePointer) {
+      return;
+    }
+
     const lenis = new Lenis({
       duration: 1.15,
       wheelMultiplier: 0.95,
@@ -12,6 +18,7 @@ export default function SmoothScroll() {
       lerp: 0.09,
       smoothWheel: true,
       syncTouch: false,
+      prevent: (node) => node.closest("[data-portfolio-detail-scroll]") != null,
     });
 
     let frameId = 0;
