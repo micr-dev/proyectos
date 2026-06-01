@@ -65,6 +65,7 @@ upstash-keepalive
 vapora
 veskforge
 veyoff
+vss
 waterWAV
 
 ## Hardware

@@ -105,6 +105,14 @@ export const softwareBatchC = {
     ],
     languages: ["C++", "Python", "CMake"],
   },
+  vss: {
+    paragraphs: [
+      "VSS es un mod de cliente/servidor Fabric que transmite datos de chunks LOD desde el servidor a clientes compatibles con Voxy, permitiendo a los jugadores ver terreno lejano en servidores multijugador sin explorar localmente.",
+      "Las soluciones existentes de LOD en el servidor quedan rezagadas respecto a la última versión de Minecraft, carecen de transmisión en vivo mientras los jugadores se mueven, o no soportan generación de chunks bajo demanda para terreno no generado.",
+      "El mod usa un protocolo de handshake con límites de ancho de banda por jugador, escaneo espiral de columnas, lecturas asíncronas de disco, generación opcional de chunks y difusión de actualizaciones de columnas sucias para mantener los datos LOD actualizados.",
+    ],
+    languages: ["Java", "Shell"],
+  },
   waterWAV: {
     paragraphs: [
       "WaterWAV es un script de Python que incrusta una imagen en el espectrograma de un archivo de audio a través de STFT para que la marca de agua aparezca cuando lo cargas en un visor de espectrogramas.",
