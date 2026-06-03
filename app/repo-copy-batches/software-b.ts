@@ -1,6 +1,14 @@
 import type { RepoDescription } from "../repo-description-types";
 
 export const softwareBatchB = {
+  gitbanana: {
+    paragraphs: [
+      "Gitbanana es una GitHub Action que publica un asset de release directamente a una entrega de GameBanana, gestionando la subida del archivo, la creación de la actualización y la verificación en un solo paso del workflow.",
+      "GameBanana bloquea el inicio de sesión automatizado desde runners de CI mediante protecciones anti-bot, así que gitbanana lo evita consumiendo un estado de Playwright capturado desde una sesión de navegador local y reutilizando esas cookies durante la subida.",
+      "Escrito en TypeScript con Playwright para la automatización del navegador, valida el acceso de edición antes de realizar escrituras y expone salidas estables como la URL del archivo en GameBanana para enlazar desde los releases de GitHub.",
+    ],
+    languages: ["TypeScript", "JavaScript"],
+  },
   gitquarry: {
     paragraphs: [
       "Gitquarry es un CLI de terminal para búsqueda de repositorios de GitHub que preserva el comportamiento de búsqueda nativo por defecto y solo habilita descubrimiento ampliado, reranking y enriquecimiento basado en README bajo petición explícita.",
