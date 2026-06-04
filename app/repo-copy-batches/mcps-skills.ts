@@ -81,6 +81,14 @@ export const mcpsSkillsBatch = {
     ],
     languages: ["Python", "PowerShell", "Shell", "JavaScript"],
   },
+  "grill-with-facts": {
+    paragraphs: [
+      "grill-with-facts es una habilidad de agente para someter planes a prueba de estrés una pregunta a la vez y guardar las decisiones resueltas como hechos atómicos y verificables en un archivo .facts.",
+      "Las propuestas vagas suelen llevar suposiciones ocultas que se pierden en el historial del chat, por lo que la habilidad somete cada rama a prueba de estrés y escribe resultados duraderos que otros agentes pueden refinar.",
+      "Envuelve el CLI de facts, lee la hoja de hechos actual, pregunta una pregunta clave y persiste inmediatamente cada respuesta como hecho spec o draft mediante facts add.",
+    ],
+    languages: ["Markdown"],
+  },
   "gsap-skills": {
     paragraphs: [
       "gsap-skills empaqueta habilidades de referencia de Opencode para patrones de animación GSAP: líneas de tiempo, ScrollTrigger, texto, SVG, FLIP, arrastrable, observador, easing, ayudantes de React y notas de rendimiento.",

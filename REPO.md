@@ -88,6 +88,7 @@ perplexity-mcp
 
 ## Habilidades
 claude-skills
+grill-with-facts
 gsap-skills
 minecraft-server-skill
 seedance-skills
