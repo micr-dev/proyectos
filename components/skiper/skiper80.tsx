@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { BookOpen, CircleArrowOutUpRight, Lock } from "lucide-react";
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useSuperHoverRef } from "super-hover/react";
 import {
   getRepoDisplayTitle,
   getRepoSlugPath,
@@ -153,6 +154,22 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
   const warmedImagesRef = useRef(new Set<string>());
   const loadedImagesRef = useRef(new Set<string>());
   const closingTitleScrollOriginRef = useRef(0);
+
+  const superHoverRef = useSuperHoverRef({
+    moveEventType: false,
+    onEnter(event) {
+      const el = event.detail.current as HTMLElement | null;
+      if (!el) return;
+      const indexAttr = el.getAttribute("data-super-hover");
+      if (indexAttr != null) {
+        const index = Number(indexAttr);
+        if (!Number.isNaN(index) && index >= 0 && index < items.length) {
+          preloadImage(items[index].image, "high");
+          setIsHoveredIndex(index);
+        }
+      }
+    },
+  });
 
   const items = useMemo<RepoItem[]>(
     () =>
@@ -704,7 +721,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
             onError={() => markImageLoaded(activeItem.image)}
           />
 
-          <ul className="ml-auto mr-[10%] flex w-fit flex-col gap-2 pb-[20vh] pt-[42vh]">
+          <ul ref={superHoverRef} className="ml-auto mr-[10%] flex w-fit flex-col gap-2 pb-[20vh] pt-[42vh]">
             {(() => {
               let itemCursor = 0;
 
@@ -725,6 +742,7 @@ const Skiper80 = ({ sections, initialSlug }: Skiper80Props) => {
                       }}
                       transition={sharedSpring}
                       key={item.key}
+                      data-super-hover={String(item.index)}
                       style={{
                         opacity:
                           isClosing && isItemActive === item.index
