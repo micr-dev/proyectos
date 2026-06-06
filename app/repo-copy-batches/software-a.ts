@@ -17,6 +17,14 @@ export const softwareBatchA = {
     ],
     languages: ["CSS", "TypeScript", "HTML"]
   },
+  altman: {
+    paragraphs: [
+      "Altman automatiza la creación de cuentas de ChatGPT usando Camoufox con proxies Mullvad y correos desechables de Micromail, generando credenciales nuevas y completando todo el flujo de registro incluyendo la verificación OTP.",
+      "La creación manual de cuentas es tediosa y frágil, así que Altman envuelve la automatización del navegador en un ejecutor con puntos de control que admite reanudación, selectores localizados para varios idiomas de interfaz y múltiples regiones de proxy.",
+      "Conduce Camoufox mediante Playwright, extrae los OTP de Micromail por IMAP, captura capturas de pantalla de cada paso para auditoría y aplica una barrera de precios que se detiene si el plan Plus no muestra una oferta gratuita el primer mes."
+    ],
+    languages: ["Python"]
+  },
   "amigazo": {
     paragraphs: [
       "amigazo es un bot de Discord escrito en Haskell que cuenta palabras configuradas en un servidor, clasifica usuarios por totales combinados y por palabra, y lanza palabras aleatorias a lo largo del día.",
