@@ -22,7 +22,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     repo: "Microck/altman",
     sourceUrl: "https://github.com/Microck/altman",
     livePreviewUrl: null,
-    isPrivate: false,
+    isPrivate: true,
   },
   "m-d/about": {
     repo: "micr-dev/about",
