@@ -1,5 +1,6 @@
 # Lista de repositorios
 ## Software
+akron
 anonQ
 akron-discord
 akron-website
