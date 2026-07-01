@@ -9,6 +9,7 @@ anonQ
 anydesk-legacy-bin
 archie
 bdss-club-website
+bettersaves
 bolify
 Celeste-QuartzSkin
 chalcopyrite

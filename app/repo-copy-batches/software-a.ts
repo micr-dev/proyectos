@@ -81,6 +81,14 @@ export const softwareBatchA = {
     ],
     languages: ["C++", "JavaScript", "CSS", "HTML"]
   },
+  "bettersaves": {
+    paragraphs: [
+      "BetterSaves es un mod de Celeste/Everest que reemplaza el menú nativo de guardado con un compacto mazo de partidas para jugadores que mantienen más de tres saves.",
+      "El menú por defecto de Celeste no escala cuando los guardados se convierten en una colección, así que BetterSaves mantiene la ruta común rápida con una acción de continuar prioritaria antes de añadir navegación densa, saves fijados, archivados, duplicados y opciones de restauración.",
+      "El mod en .NET 8 agrupa las partidas en secciones de recientes, fijadas, en progreso, completadas, con mods y archivadas, con navegación pensada para mando, filtrado por teclado y múltiples modos de ordenación."
+    ],
+    languages: ["C#"]
+  },
   "Celeste-QuartzSkin": {
     paragraphs: [
       "Quarzite es un mod de skin de Celeste OC que reemplaza a Madeline con el personaje original, completo con cambios de color de pelo según el contador de dashes y animaciones de inactividad personalizadas.",
