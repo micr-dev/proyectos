@@ -15,6 +15,7 @@ Celeste-QuartzSkin
 chalcopyrite
 cinco
 codexport
+crabbox-template-boxes
 dialogue-textbox
 DXFtoIRL
 elevenlabs-webui
