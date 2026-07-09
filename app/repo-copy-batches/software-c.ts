@@ -9,6 +9,14 @@ export const softwareBatchC = {
     ],
     languages: ["TypeScript", "CSS", "JavaScript"],
   },
+  syntaxis: {
+    paragraphs: [
+      "Syntaxis es un backend cerrado para un constructor de currículums con IA que importa perfiles de GitHub y LinkedIn, genera currículums en LaTeX mediante IA y los compila a PDF.",
+      "La mayoría de herramientas de currículum te encierran en plantillas rígidas y no ofrecen importación de datos, por lo que el backend importa perfiles reales y alimenta datos estructurados en la generación de LaTeX con IA usando múltiples plantillas por industria.",
+      "Construido sobre Hono con Drizzle ORM en PostgreSQL, enruta la generación de IA a través de DeepSeek con OpenAI como respaldo, compila LaTeX en el servidor, gestiona créditos y suscripciones mediante Polar y Stripe, y soporta 10 idiomas con prompts localizados.",
+    ],
+    languages: ["TypeScript", "TeX", "Dockerfile"],
+  },
   "supabase-keepalive": {
     paragraphs: [
       "Supabase-keepalive es un script de Python que llama repetidamente a un RPC ligero en tu base de datos Supabase para evitar que el nivel gratuito se pause.",
