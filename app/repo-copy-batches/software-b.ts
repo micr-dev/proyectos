@@ -89,6 +89,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "CSS", "JavaScript"],
   },
+  moji: {
+    paragraphs: [
+      "moji es un CLI en Go para buscar fuentes que busca en múltiples repositorios de fuentes, ordena los candidatos por familia y nombre de archivo, y descarga la mejor coincidencia mediante una TUI de Bubble Tea, una tabla estable para pipes o JSON para scripting.",
+      "El descubrimiento de fuentes está fragmentado entre sitios dispersos, repos de GitHub y registros sin un ranking unificado ni validación de descargas, así que moji los agrega en un único pipeline con filtrado por formato y descargas de familias completas.",
+      "El binario de Go se distribuye como wrapper npm para instalación global, usa los proveedores GetFonts, GitHub (búsqueda de repositorios/árbol/releases con auth opcional), registro y websearch (Kagi CLI o SearXNG), valida los magic bytes de las fuentes con dedup SHA-256 y renombrado atómico, y soporta plugins de fuentes configurables.",
+    ],
+    languages: ["Go", "TypeScript", "JavaScript", "Makefile"],
+  },
   nagrom: {
     paragraphs: [
       "Nagrom es un bot de Discord autoalojable que pasa las afirmaciones por un proceso escalonado de verificación de hechos, fuerza salidas en JSON y guarda cada veredicto en SQLite.",
