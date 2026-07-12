@@ -129,14 +129,6 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "JavaScript", "CSS", "Shell"],
   },
-  openslate: {
-    paragraphs: [
-      "Openslate redirige el tráfico de Slate a través de una instancia local de CLIProxyAPI para que tus sesiones de Slate se mantengan en tus propios créditos en lugar de forzar cargos de Random Labs.",
-      "Los usuarios de Slate todavía necesitan el flujo de trabajo, pero no la facturación forzada de Random Labs, por lo que el proyecto reescribe la ruta a un proxy local de CLIProxyAPI en su lugar.",
-      "Una simple instalación de `node install.mjs` reescribe el tráfico de `/v3/stream` y registra las reescrituras para su verificación.",
-    ],
-    languages: ["JavaScript", "Shell"],
-  },
   protoncode: {
     paragraphs: [
       "Protoncode es una aplicación de escritorio para Windows y Linux que prioriza la bandeja, que monitorea una sesión activa de Proton Mail y muestra notificaciones OTP enmascaradas cerca de la bandeja del sistema.",
