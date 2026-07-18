@@ -99,10 +99,18 @@ export const mcpsSkillsBatch = {
   },
   "seedance-skills": {
     paragraphs: [
-      "seedance-skills agrupa paquetes de prompts de Opencode para la generación de video Seedance 2.0, cubriendo análisis de repositorio, escritura de guiones, prompts de segmentos, selección de montaje y paquetes de prompts.",
-      "Las promociones de software listas para enviar necesitan un flujo de trabajo repetible en lugar de instrucciones ad hoc, por lo que las habilidades codifican el método de montaje repo-first con pasos claros.",
-      "El repositorio expone el comando `/seedance-prompts`, las habilidades `seedance` y `seedance-prompt-generator`, e instrucciones para sincronizar esas carpetas en el directorio local de habilidades.",
+      "seedance-skills bundles Opencode prompt packages for Seedance 2.0 video generation, covering repo analysis, script writing, segment prompts, montage selection, and prompt packs.",
+      "Ship-ready software promos need a repeatable workflow instead of ad hoc instructions, so the skills encode the repo-first montage method with clear steps.",
+      "The repo exposes the `/seedance-prompts` command, the `seedance` and `seedance-prompt-generator` skills, and instructions for syncing those folders into the local skills directory.",
     ],
     languages: ["Markdown", "JavaScript"],
   },
-} as const satisfies Record<string, RepoDescription>;
+  "tailor-coderabbit-config": {
+    paragraphs: [
+      "tailor-coderabbit-config es una habilidad de Codex que construye y calibra el archivo .coderabbit.yaml de un repositorio para las revisiones de CodeRabbit.",
+      "La configuración manual suele generar comentarios de revisión ruidosos o irrelevantes, por lo que la habilidad trata el config como un artefacto de ingeniería que se ajusta según datos de revisiones reales.",
+      "Mapea los límites de confianza y la CI del repositorio, obtiene el esquema en vivo y analiza revisiones representativas para clasificar los resultados como señal, ruido u omisiones.",
+    ],
+    languages: ["Markdown"],
+  },
+
