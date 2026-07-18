@@ -113,4 +113,5 @@ export const mcpsSkillsBatch = {
     ],
     languages: ["Markdown"],
   },
+} as const satisfies Record<string, RepoDescription>;
 
