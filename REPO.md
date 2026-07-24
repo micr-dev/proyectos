@@ -49,6 +49,7 @@ ms26/spikehound
 mullgate
 nagrom
 old-f3
+ollama-quota-bench
 onairo
 opencode-studio
 protoncode

@@ -105,6 +105,14 @@ export const softwareBatchB = {
     ],
     languages: ["Python", "HTML", "TeX", "Mermaid"],
   },
+  "ollama-quota-bench": {
+    paragraphs: [
+      "ollama-quota-bench es un harness de Python sin dependencias que mide el consumo relativo de cuota de Ollama Cloud entre modelos, ejecutando cargas de trabajo controladas y rastreando los deltas de cuota desde la página de configuración autenticada.",
+      "Ollama Cloud no publica los costos de cuota por modelo, por lo que los usuarios no tienen forma de predecir cuántas llamadas consumirá un modelo ni comparar modelos por eficiencia sin ejecutar sus propios benchmarks.",
+      "La CLI intercala modelos de anclaje de referencia para compensar el ruido de los límites de tasa, lee los porcentajes de cuota desde la sesión autenticada y genera informes en CSV, JSON, Markdown y HTML con multiplicadores por modelo y comparaciones con índices de inteligencia.",
+    ],
+    languages: ["Python", "HTML"],
+  },
   onairo: {
     paragraphs: [
       "Onairo es una extensión de Chromium que captura selecciones, texto e imágenes del portapapeles y contenido del clic derecho, lo envía a proveedores alojados o al puente nativo de Codex, y devuelve respuestas para copiar, pegar, escribir o superposiciones de información.",
