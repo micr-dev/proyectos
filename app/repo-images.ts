@@ -1,3 +1,5 @@
+import manifest from "../public/images/repo-thumbnails/responsive-manifest.json";
+
 const placeholderImages = [
   "/images/repo-thumbnails/micr.dev.webp",
   "/images/repo-thumbnails/blog.webp",
@@ -104,6 +106,10 @@ const repoImages: Record<string, string> = {
 
 const WIDTHS = [300, 1000, 2000] as const;
 
+// manifest maps "akron" -> [300, 1000, 2000]; images narrower than 1000px omit 1000.
+type Manifest = Record<string, number[]>;
+const responsiveManifest: Manifest = manifest;
+
 function getImagePath(filename: string) {
   return encodeURI(`/images/repo-thumbnails/${filename}`);
 }
@@ -113,9 +119,28 @@ function getResponsivePath(filename: string, width: number) {
   return encodeURI(`/images/repo-thumbnails/responsive/${base}-${width}w.webp`);
 }
 
+function widthsForFilename(filename: string): readonly number[] {
+  const base = filename.replace(/\.\w+$/, "");
+  return responsiveManifest[base] ?? WIDTHS;
+}
+
 function getSrcSet(pathOrFilename: string) {
   const filename = pathOrFilename.split("/").pop() ?? pathOrFilename;
-  return WIDTHS.map((width) => `${getResponsivePath(filename, width)} ${width}w`).join(", ");
+  return widthsForFilename(filename)
+    .map((width) => `${getResponsivePath(filename, width)} ${width}w`)
+    .join(", ");
+}
+
+/** Returns all responsive URLs for a repo thumbnail, used for preloading / load tracking. */
+export function getRepoImageResponsiveUrls(title: string, index: number) {
+  const filename = repoImages[title];
+  const pathOrFilename = filename
+    ? filename
+    : placeholderImages[index % placeholderImages.length];
+  const realFilename = pathOrFilename.split("/").pop() ?? pathOrFilename;
+  return widthsForFilename(realFilename).map((width) =>
+    getResponsivePath(realFilename, width),
+  );
 }
 
 export function getRepoImage(title: string, index: number) {
