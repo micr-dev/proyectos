@@ -4,16 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  cuelume: 111bd03439ab32877782fa7c1d5da6bb15c52bc4fdac3b0106f39605c1a69d4f
-
 importers:
 
   .:
     dependencies:
       cuelume:
         specifier: ^0.1.2
-        version: 0.1.2(patch_hash=111bd03439ab32877782fa7c1d5da6bb15c52bc4fdac3b0106f39605c1a69d4f)
+        version: 0.1.2
       framer-motion:
         specifier: ^12.29.2
         version: 12.38.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -2786,7 +2783,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cuelume@0.1.2(patch_hash=111bd03439ab32877782fa7c1d5da6bb15c52bc4fdac3b0106f39605c1a69d4f): {}
+  cuelume@0.1.2: {}
 
   damerau-levenshtein@1.0.8: {}
 
