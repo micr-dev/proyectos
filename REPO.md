@@ -64,6 +64,7 @@ syntaxis
 supabase-keepalive
 t3-chat-zipper
 tailstick
+telnyx-voice-agent
 traccia
 tuireel
 tuneport

@@ -145,4 +145,12 @@ export const softwareBatchC = {
     ],
     languages: ["Go", "JavaScript"],
   },
+  "telnyx-voice-agent": {
+    paragraphs: [
+      "Telnyx-voice-agent es un agente de voz saliente que realiza llamadas telefónicas, permite que un asistente de IA gestionado lleve la conversación y mantiene al operador dentro del circuito de aprobación.",
+      "Las llamadas totalmente autónomas pueden tomar decisiones importantes sin supervisión humana, mientras que llamar manualmente pierde la velocidad y consistencia de un asistente, por lo que este proyecto deja al operador a una notificación de cada paso sensible.",
+      "El servicio en Python usa Telnyx Call Control y webhooks de AI Assistant, acciones push de ntfy para aprobar, denegar y responder, verificación Ed25519, endpoints protegidos con bearer y persistencia SQLite para llamadas, transcripciones y grabaciones de doble canal.",
+    ],
+    languages: ["Python", "Dockerfile"],
+  },
 } as const satisfies Record<string, RepoDescription>;
