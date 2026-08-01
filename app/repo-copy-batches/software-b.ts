@@ -153,6 +153,14 @@ export const softwareBatchB = {
     ],
     languages: ["PowerShell", "Batchfile"],
   },
+  "simple-pool": {
+    paragraphs: [
+      "simple-pool es un router local de failover persistente para backends de chat-completions compatibles con OpenAI que sigue sirviendo solicitudes cuando un proveedor cae.",
+      "Un proxy simple de round-robin olvida qué backend está sano y puede seguir enviando tráfico a límites o interrupciones, por lo que simple-pool usa fallback ordenado con cooldowns persistidos.",
+      "El servicio Python expone `/v1/models` y `/v1/chat/completions`, expande secretos desde variables de entorno, recuerda el último backend sano y solo devuelve un 503 agregado cuando todos están indisponibles.",
+    ],
+    languages: ["Python"],
+  },
   solecist: {
     paragraphs: [
       "Solecist es un bot de Discord que vigila los canales de debate configurados y señala las posibles falacias lógicas mientras ocurren, respondiendo con embeds compactos que nombran la falacia, citan la afirmación y explican por qué el razonamiento parece débil.",

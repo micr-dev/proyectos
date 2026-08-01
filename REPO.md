@@ -56,6 +56,7 @@ protoncode
 rental-search
 revisor
 scudo
+simple-pool
 sincronizado
 solecist
 SpainGPT
