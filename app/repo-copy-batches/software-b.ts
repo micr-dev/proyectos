@@ -89,6 +89,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "CSS", "JavaScript"],
   },
+  "mic-hotkey-remapper": {
+    paragraphs: [
+      "mic-hotkey-remapper es una utilidad para Windows que vigila un micrófono USB de escritorio específico y activa un atajo de teclado configurable cuando el dispositivo se conecta o desconecta.",
+      "El botón de silencio del micrófono lo desconecta físicamente del USB, por lo que vigilar la presencia del dispositivo ofrece una señal fiable sin depender de la gestión HID específica del fabricante.",
+      "La aplicación Win32 en C++17 escucha notificaciones de dispositivos mediante SetupAPI, admite los modos hold y tap, captura combinaciones de teclas en una ventana de configuración nativa, guarda los ajustes en `%APPDATA%` y puede registrarse al iniciar Windows.",
+    ],
+    languages: ["C++"],
+  },
   moji: {
     paragraphs: [
       "moji es un CLI en Go para buscar fuentes que busca en múltiples repositorios de fuentes, ordena los candidatos por familia y nombre de archivo, y descarga la mejor coincidencia mediante una TUI de Bubble Tea, una tabla estable para pipes o JSON para scripting.",
