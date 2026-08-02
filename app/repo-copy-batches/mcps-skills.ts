@@ -113,5 +113,13 @@ export const mcpsSkillsBatch = {
     ],
     languages: ["Markdown"],
   },
+  "ui-unslop": {
+    paragraphs: [
+      "ui-unslop es una habilidad de Codex para eliminar el estilo formulaico de la IA en las interfaces frontend y hacer que las interfaces generadas vuelvan a sentirse intencionales.",
+      "Las interfaces generadas por IA suelen repetir los mismos gradientes, tarjetas redondeadas, títulos enormes y patrones decorativos, por lo que la habilidad convierte la limpieza visual en un proceso de revisión concreto.",
+      "Incluye un flujo de trabajo reutilizable en SKILL.md, un manifiesto de habilidades de OpenAI y un catálogo de patrones que identifica el ruido visual y lo sustituye por decisiones más claras de jerarquía, espaciado, tipografía e interacción.",
+    ],
+    languages: ["Markdown"],
+  },
 } as const satisfies Record<string, RepoDescription>;
 
