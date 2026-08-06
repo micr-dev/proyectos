@@ -160,5 +160,13 @@ export const softwareBatchA = {
       "Las subidas pasan por etapas de soldado, decimación, cuantización y Draco dentro del pipeline de Node, mientras el frontend actualiza estadísticas y enlaces para compartir."
     ],
     languages: ["TypeScript", "CSS", "HTML", "JavaScript"]
+  },
+  "handy-codex": {
+    paragraphs: [
+      "Handy Codex es un fork de Handy que añade ChatGPT/Codex como proveedor remoto de transcripción seleccionable, manteniendo disponibles los modelos locales de reconocimiento de voz de Handy.",
+      "Handy ya cubre el flujo offline, pero quienes prefieren la transcripción remota y ya tienen un login de Codex necesitarían otra herramienta o una integración basada en una API key, así que este fork añade esa opción sin sustituir los modelos locales.",
+      "El fork añade un motor CodexAsr en Rust/Tauri que descubre o acepta un auth.json de Codex configurado, envía las grabaciones al endpoint de transcripción de ChatGPT con el contexto de cuenta y expone el proveedor en el selector de modelos y la interfaz de ajustes de React/TypeScript."
+    ],
+    languages: ["Rust", "TypeScript", "Nix", "NSIS", "Python", "CSS", "Swift", "Shell", "HTML", "C", "JavaScript"]
   }
 } as const satisfies Record<string, RepoDescription>;
