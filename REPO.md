@@ -12,6 +12,7 @@ bdss-club-website
 bettersaves
 bolify
 Celeste-QuartzSkin
+cat-monitor
 chalcopyrite
 cinco
 codexport
