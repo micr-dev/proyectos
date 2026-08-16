@@ -176,5 +176,13 @@ export const softwareBatchA = {
       "El fork añade un motor CodexAsr en Rust/Tauri que descubre o acepta un auth.json de Codex configurado, envía las grabaciones al endpoint de transcripción de ChatGPT con el contexto de cuenta y expone el proveedor en el selector de modelos y la interfaz de ajustes de React/TypeScript."
     ],
     languages: ["Rust", "TypeScript", "Nix", "NSIS", "Python", "CSS", "Swift", "Shell", "HTML", "C", "JavaScript"]
+  },
+  "keyflare-qmk-tool": {
+    paragraphs: [
+      "keyflare es una aplicación de escritorio multiplataforma que incorpora iluminación reactiva de color fijo al firmware QMK sin exigir editar C a mano.",
+      "QMK no puede inferir de forma segura el cableado físico de los LED a partir del modelo o la distribución de un teclado, así que keyflare solo expone los canales de retroiluminación e indicadores del host que declara la fuente de teclado seleccionada.",
+      "La aplicación de Electron y React importa una fuente de teclado y un keymap, lee los metadatos de distribución de QMK, inyecta un módulo comunitario de QMK fijado, ejecuta el compilador real de QMK y guarda artefactos `.hex`, `.bin` o `.uf2` mediante una frontera IPC validada.",
+    ],
+    languages: ["TypeScript", "CSS", "C", "HTML"],
   }
 } as const satisfies Record<string, RepoDescription>;

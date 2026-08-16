@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 
 interface Skiper10Props {
   children: React.ReactNode;
+  durationMs?: number;
   onComplete?: () => void;
   preloadTiers?: readonly (readonly string[])[];
   text?: string;
@@ -57,6 +58,7 @@ async function preloadTier(
 
 const Skiper10 = ({
   children,
+  durationMs = LOADER_DURATION_MS,
   onComplete,
   preloadTiers = EMPTY_PRELOAD_TIERS,
   text = "Convirtiendo conceptos en sistemas funcionales.",
@@ -71,7 +73,7 @@ const Skiper10 = ({
     const loaderTimer = window.setTimeout(() => {
       setCanRenderChildren(true);
       setShowPreloader(false);
-    }, LOADER_DURATION_MS);
+    }, durationMs);
 
     const preloadAllTiers = async () => {
       for (const [tierIndex, tier] of preloadTiers.entries()) {
@@ -94,7 +96,7 @@ const Skiper10 = ({
       cancelled = true;
       window.clearTimeout(loaderTimer);
     };
-  }, [preloadTiers]);
+  }, [durationMs, preloadTiers]);
 
   useEffect(() => {
     if (showPreloader) {
