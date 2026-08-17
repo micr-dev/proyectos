@@ -1,6 +1,14 @@
 import type { RepoDescription } from "../repo-description-types";
 
 export const softwareBatchC = {
+  "calendar-peek-extension": {
+    paragraphs: [
+      "Calendar Peek es una extensión para Chromium que abre el calendario compartido de un compañero desde su tarjeta de perfil de Google Workspace.",
+      "Encontrar el calendario de un compañero normalmente implica copiar su correo y buscarlo manualmente, así que la extensión deja esa consulta a un clic sin saltarse las reglas de uso compartido de Google.",
+      "Utiliza scripts de contenido de Manifest V3 en Google Workspace, señales accesibles de las tarjetas de perfil, la búsqueda nativa de personas de Google y un respaldo en el popup con estado local de corta duración mediante chrome.storage.",
+    ],
+    languages: ["JavaScript", "CSS", "HTML"],
+  },
   squircle: {
     paragraphs: [
       "Squircle es una aplicación Next.js que te permite soltar imágenes o GIFs, ajustar el radio de las esquinas, las sombras, los contornos y exportar archivos con esquinas transparentes sin enviar nada a un servidor.",

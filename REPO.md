@@ -11,6 +11,7 @@ archie
 bdss-club-website
 bettersaves
 bolify
+calendar-peek-extension
 Celeste-QuartzSkin
 cat-monitor
 chalcopyrite
