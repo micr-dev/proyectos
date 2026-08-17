@@ -3,9 +3,9 @@ import type { RepoDescription } from "../repo-description-types";
 export const softwareBatchC = {
   "calendar-peek-extension": {
     paragraphs: [
-      "Calendar Peek es una extensión para Chromium que abre el calendario compartido de un compañero desde su tarjeta de perfil de Google Workspace.",
-      "Encontrar el calendario de un compañero normalmente implica copiar su correo y buscarlo manualmente, así que la extensión deja esa consulta a un clic sin saltarse las reglas de uso compartido de Google.",
-      "Utiliza scripts de contenido de Manifest V3 en Google Workspace, señales accesibles de las tarjetas de perfil, la búsqueda nativa de personas de Google y un respaldo en el popup con estado local de corta duración mediante chrome.storage.",
+      "Calendar Peek es una extensión para Chromium que consulta la disponibilidad del calendario de un compañero desde las tarjetas de perfil de Google Workspace o la aplicación web de Slack.",
+      "Consultar calendarios normalmente implica copiar un correo y buscarlo manualmente, así que la extensión deja el flujo útil a un clic y respeta los permisos de uso compartido de Google y los datos visibles del perfil de Slack.",
+      "Utiliza scripts de contenido de Manifest V3, la búsqueda nativa de personas de Google, un popup de disponibilidad de Slack conectado a la API de Calendar en modo lectura, estado local de corta duración y OAuth opcional para las consultas desde Slack.",
     ],
     languages: ["JavaScript", "CSS", "HTML"],
   },
