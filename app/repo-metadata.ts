@@ -312,6 +312,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: "https://github.com/Microck/opencode-studio",
     isPrivate: false,
   },
+  "pangram-cli": {
+    repo: "Microck/pangram-cli",
+    sourceUrl: "https://github.com/Microck/pangram-cli",
+    livePreviewUrl: "https://pangram.micr.dev",
+    isPrivate: false,
+  },
   "m-d/proyectos": {
     repo: "micr-dev/proyectos",
     sourceUrl: "https://github.com/micr-dev/proyectos",

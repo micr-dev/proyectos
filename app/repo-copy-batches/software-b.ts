@@ -145,6 +145,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript", "JavaScript", "CSS", "Shell"],
   },
+  "pangram-cli": {
+    paragraphs: [
+      "pangram-cli es un cliente de terminal no oficial para la detección de IA y la comprobación de plagio de Pangram que sirve a pipelines de shell, usuarios de terminal interactiva y agentes de IA mediante un solo núcleo de comportamiento.",
+      "La aplicación web de Pangram es útil para comprobaciones interactivas, pero los scripts y los flujos de agentes necesitan salida JSON como base, errores estables, historial opcional y protecciones explícitas para facturación, archivos y mutaciones.",
+      "El runtime de Rust gestiona el comportamiento HTTP de Pangram, el sondeo, la normalización, los reintentos y el estado de tareas, mientras los adaptadores CLI, TUI y MCP tipado sobre stdio comparten contratos generados desde un espacio de documentación TypeScript separado.",
+    ],
+    languages: ["Rust", "JavaScript", "TypeScript", "HTML", "MDX", "Shell", "PowerShell", "CSS", "Handlebars"],
+  },
   protoncode: {
     paragraphs: [
       "Protoncode es una aplicación de escritorio para Windows y Linux que prioriza la bandeja, que monitorea una sesión activa de Proton Mail y muestra notificaciones OTP enmascaradas cerca de la bandeja del sistema.",
