@@ -145,6 +145,14 @@ export const softwareBatchC = {
     ],
     languages: ["Python"],
   },
+  "ravenbin-upload": {
+    paragraphs: [
+      "ravenbin-upload es un cliente de línea de comandos en Python que envía un archivo local a Raven Bin e imprime una URL temporal para compartirla en flujos de shell.",
+      "Compartir artefactos temporales suele implicar montar un servicio de subida separado o exponer un archivo local, mientras que este wrapper mantiene el flujo de un solo comando y deja que Raven gestione el cifrado.",
+      "Controla el cliente web actual de Raven en Chromium sin interfaz mediante Playwright, coloca los archivos bajo el directorio personal para compatibilidad con el sandbox, selecciona uno de seis valores de caducidad y elimina la copia provisional tras la subida.",
+    ],
+    languages: ["Python"],
+  },
   "rental-search": {
     paragraphs: [
       "Rental-search es una CLI local que captura anuncios de alquiler de portales inmobiliarios españoles, envía fotos y texto a un LLM con capacidad de visión, y produce evaluaciones JSON con evidencia contra un conjunto de criterios configurable.",
