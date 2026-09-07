@@ -21,3 +21,8 @@ test("builds display titles and slug paths from repo titles", () => {
   assert.equal(getRepoSlugPath("anonQ"), "anonq");
   assert.equal(getRepoSlugPath("m-d/about"), "micr/about");
 });
+
+test("spells Boilify correctly without changing its published route", () => {
+  assert.equal(getRepoDisplayTitle("bolify"), "boilify");
+  assert.equal(getRepoSlugPath("bolify"), "bolify");
+});
