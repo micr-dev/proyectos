@@ -169,6 +169,14 @@ export const softwareBatchC = {
     ],
     languages: ["JavaScript", "Python", "HTML"],
   },
+  "github-open-counts-script": {
+    paragraphs: [
+      "GitHub Open Counts Script es un userscript de Tampermonkey que añade los recuentos de issues y pull requests abiertos a las tarjetas de repositorios de GitHub para mostrar la actividad de un repositorio de un vistazo.",
+      "GitHub muestra tarjetas de repositorios con estrellas y forks, pero no expone la carga actual de issues o pull requests, mientras que un panel del lado del servidor añadiría configuración y estado de red innecesarios para una pequeña mejora personal del navegador.",
+      "El userscript independiente en JavaScript observa las páginas dinámicas de GitHub con MutationObserver, obtiene los recuentos públicos de la API de GitHub con concurrencia y caché limitadas, y admite tokens locales opcionales para repositorios privados mediante el menú del gestor de userscripts.",
+    ],
+    languages: ["JavaScript"],
+  },
   revisor: {
     paragraphs: [
       "Revisor es una CLI que clona pull requests y issues de GitHub en espacios de trabajo temporales, ejecuta codex con flujos de trabajo empaquetados y luego informa, parchea o abre un pull request según el comando.",
