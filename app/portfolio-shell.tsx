@@ -12,6 +12,8 @@ interface PortfolioShellProps {
   sections: RepoSection[];
 }
 
+const INITIAL_PRELOAD_COUNT = 12;
+
 const PortfolioShell = ({
   initialSlug = null,
   preloaderText = "Convirtiendo conceptos en sistemas funcionales.",
@@ -20,9 +22,9 @@ const PortfolioShell = ({
   const preloadTiers = useMemo(
     () =>
       getRepoImagePreloadTiers(
-        sections.flatMap((section) =>
-          section.items.map((item) => item.title),
-        ),
+        sections
+          .flatMap((section) => section.items.map((item) => item.title))
+          .slice(0, INITIAL_PRELOAD_COUNT),
       ),
     [sections],
   );
