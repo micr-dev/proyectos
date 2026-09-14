@@ -161,6 +161,14 @@ export const softwareBatchC = {
     ],
     languages: ["TypeScript"],
   },
+  "remind-me-later": {
+    paragraphs: [
+      "remind me later es un plugin de BetterDiscord que lleva recordatorios privados y locales de mensajes a Discord para que puedas volver a un mensaje cuando llegue la hora.",
+      "Discord no tiene una forma integrada de recuperar un mensaje en un momento útil, mientras que los bots y los avisos falsos añaden acceso de red, ruido en el servidor o estado ligado a la cuenta a una tarea que debería ser personal.",
+      "El plugin independiente en JavaScript guarda registros por cuenta mediante BdApi.Data, añade programación desde el menú contextual y una bandeja buscable, y admite alertas locales, posponer, notificaciones de escritorio y un sonido sin dependencias de ejecución ni solicitudes de red.",
+    ],
+    languages: ["JavaScript", "Python", "HTML"],
+  },
   revisor: {
     paragraphs: [
       "Revisor es una CLI que clona pull requests y issues de GitHub en espacios de trabajo temporales, ejecuta codex con flujos de trabajo empaquetados y luego informa, parchea o abre un pull request según el comando.",
