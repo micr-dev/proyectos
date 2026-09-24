@@ -130,6 +130,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  "codex-live-voice": {
+    repo: "Microck/codex-live-voice",
+    sourceUrl: "https://github.com/Microck/codex-live-voice",
+    livePreviewUrl: null,
+    isPrivate: false,
+  },
   codexport: {
     repo: "Microck/codexport",
     sourceUrl: "https://github.com/Microck/codexport",
@@ -378,6 +384,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  "rosario": {
+    repo: "Microck/rosario",
+    sourceUrl: "https://github.com/Microck/rosario",
+    livePreviewUrl: "https://rosario.fyi",
+    isPrivate: false,
+  },
   revisor: {
     repo: "Microck/revisor",
     sourceUrl: "https://github.com/Microck/revisor",
@@ -529,6 +541,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     repo: "Microck/vss",
     sourceUrl: "https://github.com/Microck/vss",
     livePreviewUrl: null,
+    isPrivate: false,
+  },
+  "wallapop-cli": {
+    repo: "Microck/wallapop-cli",
+    sourceUrl: "https://github.com/Microck/wallapop-cli",
+    livePreviewUrl: "https://wallapop.micr.dev/docs",
     isPrivate: false,
   },
   "waa-desktop-24": {

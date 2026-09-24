@@ -193,4 +193,28 @@ export const softwareBatchC = {
     ],
     languages: ["Python", "Dockerfile"],
   },
+  "codex-live-voice": {
+    paragraphs: [
+      "Codex Live Voice añade voz bidireccional en tiempo real a aplicaciones web mediante una sesión local de Codex CLI, sin necesitar una clave API independiente para la sesión de voz.",
+      "Las API de voz alojadas suelen requerir credenciales separadas y alejar la gestión de sesiones de la máquina del usuario, mientras que este intermediario reutiliza la cuenta de Codex iniciada y mantiene el audio del navegador en una conexión WebRTC directa.",
+      "Un intermediario en Python negocia SDP mediante `codex app-server`, ofrece rutas FastAPI opcionales y se combina con un cliente JavaScript sin compilación para transcripciones, interrupciones, uso y delegación.",
+    ],
+    languages: ["Python", "JavaScript", "Shell"],
+  },
+  "rosario": {
+    paragraphs: [
+      "Rosario es una demostración de recepción por voz para clínicas que atiende llamadas telefónicas y del navegador, consulta pacientes y citas, y guarda reservas, cambios y cancelaciones confirmados.",
+      "Una interfaz de voz debe hacer más que transcribir solicitudes: necesita validar la identidad y la disponibilidad, conservar el estado de las citas y permitir que el personal revise lo ocurrido sin presentar una demostración como un servicio clínico real.",
+      "Su backend en Python usa Pipecat, GPT-Live, herramientas de un modelo de razonamiento, SQLite, Twilio Media Streams y WebRTC; una consola React permite revisar transcripciones, grabaciones, decisiones y el calendario compartido.",
+    ],
+    languages: ["Python", "TypeScript", "CSS", "HTML", "JavaScript", "Shell", "Makefile"],
+  },
+  "wallapop-cli": {
+    paragraphs: [
+      "wallapop-cli es un cliente de terminal para buscar anuncios de Wallapop, seguir cambios en búsquedas, artículos y vendedores, y gestionar chats desde tu propia cuenta.",
+      "La web es la única forma práctica de usar estos flujos de manera interactiva, mientras que los scripts y agentes necesitan una salida estructurada y una interfaz repetible que no requiera una sesión de navegador para cada comando.",
+      "Escrito en Go como binario estático, genera JSON por defecto, importa cookies de sesión del navegador y ofrece filtros, perfiles para varias cuentas, seguimientos basados en eventos, destinos de notificación y comandos de chat.",
+    ],
+    languages: ["Go", "MDX", "TypeScript", "JavaScript", "CSS", "Shell", "Makefile"],
+  },
 } as const satisfies Record<string, RepoDescription>;
