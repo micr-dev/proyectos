@@ -203,11 +203,11 @@ export const softwareBatchC = {
   },
   "rosario": {
     paragraphs: [
-      "Rosario es una demostración de recepción por voz para clínicas que atiende llamadas telefónicas y del navegador, consulta pacientes y citas, y guarda reservas, cambios y cancelaciones confirmados.",
-      "Una interfaz de voz debe hacer más que transcribir solicitudes: necesita validar la identidad y la disponibilidad, conservar el estado de las citas y permitir que el personal revise lo ocurrido sin presentar una demostración como un servicio clínico real.",
-      "Su backend en Python usa Pipecat, GPT-Live, herramientas de un modelo de razonamiento, SQLite, Twilio Media Streams y WebRTC; una consola React permite revisar transcripciones, grabaciones, decisiones y el calendario compartido.",
+      "Rosario es un asistente de voz para el sector sanitario, diseñado para ayudar a las clínicas a gestionar conversaciones sobre citas de pacientes.",
+      "Su objetivo es reducir el trabajo administrativo rutinario y facilitar la coordinación de citas para pacientes y personal clínico.",
+      "Rosario está en desarrollo activo como producto comercial.",
     ],
-    languages: ["Python", "TypeScript", "CSS", "HTML", "JavaScript", "Shell", "Makefile"],
+    languages: [],
   },
   "wallapop-cli": {
     paragraphs: [
