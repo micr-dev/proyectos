@@ -129,6 +129,14 @@ export const softwareBatchC = {
     ],
     languages: ["Java", "Shell"],
   },
+  galleton: {
+    paragraphs: [
+      "Galleton es un daemon de renovación de sesiones que permite a aplicaciones escritas en distintos lenguajes realizar solicitudes autenticadas mediante un único servicio local.",
+      "En lugar de integrar la lógica de renovación de cada proveedor en todas las aplicaciones, Galleton centraliza adaptadores compatibles con OAuth y HTTP y conserva las credenciales rotadas entre reinicios.",
+      "Un daemon en Go ofrece una API HTTP/JSON autenticada y SDKs para TypeScript, Python, Go y Rust, con almacenamiento cifrado AES-GCM, checkpoints de rotación y solicitudes gestionadas.",
+    ],
+    languages: ["Go", "Python", "Rust", "TypeScript", "JavaScript", "Shell", "PowerShell", "Makefile"],
+  },
   "waa-desktop-24": {
     paragraphs: [
       "WAA Desktop-24 es una suite compacta y sin navegador de 24 tareas de escritorio de dificultad normal para evaluar agentes de uso informático dentro de Windows Agent Arena.",
