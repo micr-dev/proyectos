@@ -7,6 +7,12 @@ export interface RepoMetadata {
 }
 
 export const repoMetadata: Record<string, RepoMetadata> = {
+  "aesthetics-judge": {
+    repo: "Microck/aesthetics-judge",
+    sourceUrl: "https://github.com/Microck/aesthetics-judge",
+    livePreviewUrl: "https://music.micr.dev/",
+    isPrivate: false,
+  },
   akron: {
     repo: "Microck/Akron",
     sourceUrl: "https://github.com/Microck/Akron",
