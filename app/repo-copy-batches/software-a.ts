@@ -192,5 +192,13 @@ export const softwareBatchA = {
       "La aplicación de Electron y React importa una fuente de teclado y un keymap, lee los metadatos de distribución de QMK, inyecta un módulo comunitario de QMK fijado, ejecuta el compilador real de QMK y guarda artefactos `.hex`, `.bin` o `.uf2` mediante una frontera IPC validada.",
     ],
     languages: ["TypeScript", "CSS", "C", "HTML"],
-  }
+  },
+  "keygen-bench": {
+    paragraphs: [
+      "Keygen Bench es un benchmark público que comprueba si los modelos de lenguaje pueden componer música para FastTracker II.",
+      "Cada intento genera un módulo XM dentro de un contenedor Docker aislado de la red; después, un proceso limpio de FT2 lo renderiza para evaluarlo de forma consistente.",
+      "El ejecutor Python guarda los artefactos y evalúa el audio y la estructura. La web pública permite escuchar las pistas y comparar las clasificaciones de los modelos.",
+    ],
+    languages: ["Python", "JavaScript", "Shell", "HTML", "CSS", "Dockerfile"],
+  },
 } as const satisfies Record<string, RepoDescription>;

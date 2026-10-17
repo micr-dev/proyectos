@@ -65,6 +65,14 @@ export const softwareBatchB = {
     ],
     languages: ["TypeScript"],
   },
+  "omp-multi-codex": {
+    paragraphs: [
+      "OMP Multi Codex es una extensión de Oh My Pi que añade otra cuenta de ChatGPT Codex, autenticada por separado y disponible con su propio ID de proveedor.",
+      "Conserva intactos el proveedor integrado `openai-codex` y sus credenciales, pero permite usar otra cuenta desde la misma instalación de OMP.",
+      "El plugin JavaScript usa OAuth con PKCE en el navegador, renueva los tokens y consulta el catálogo de modelos de esa cuenta, con un modelo alternativo si falla la consulta.",
+    ],
+    languages: ["JavaScript"],
+  },
   "kefine-website": {
     paragraphs: [
       "Kefine-website es una tienda hecha con Vite y React para lanzamientos seleccionados, estados de próximos proyectos y un CMS apoyado en GitHub Gist, con logo en Three.js y señales de sonido.",
@@ -177,6 +185,14 @@ export const softwareBatchB = {
     ],
     languages: ["PowerShell", "Batchfile"],
   },
+  "semrush-cli": {
+    paragraphs: [
+      "Semrush CLI es un cliente de línea de comandos en TypeScript para investigar palabras clave, dominios, backlinks y proyectos con una sesión autenticada del navegador de Semrush.",
+      "Permite usar la cuenta desde scripts, con salida JSON estructurada y un servidor MCP para agentes.",
+      "Un proceso local privado del navegador Galleton guarda y utiliza la sesión. Los informes y las operaciones disponibles dependen del acceso de la cuenta de Semrush.",
+    ],
+    languages: ["TypeScript", "MDX", "JavaScript", "CSS"],
+  },
   "simple-pool": {
     paragraphs: [
       "simple-pool es un router local de failover persistente para backends de chat-completions compatibles con OpenAI que sigue sirviendo solicitudes cuando un proveedor cae.",
@@ -184,6 +200,14 @@ export const softwareBatchB = {
       "El servicio Python expone `/v1/models` y `/v1/chat/completions`, expande secretos desde variables de entorno, recuerda el último backend sano y solo devuelve un 503 agregado cuando todos están indisponibles.",
     ],
     languages: ["Python"],
+  },
+  raft: {
+    paragraphs: [
+      "Raft es un CLI autohospedado para crear espacios de trabajo Linux persistentes en hosts Incus propios.",
+      "Incluye el alta remota de hosts y comandos para crear y detener espacios de trabajo, ejecutar comandos en ellos y conectarse por SSH; también permite transferir archivos y gestionar Docker, instantáneas y forks.",
+      "El CLI de Python prepara y verifica hosts Linux por SSH, y después gestiona contenedores Incus con controles de capacidad y discos persistentes. La documentación cubre el escritorio remoto y la recuperación de copias.",
+    ],
+    languages: ["Python", "TypeScript", "JavaScript", "Shell", "CSS"],
   },
   solecist: {
     paragraphs: [

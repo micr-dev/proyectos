@@ -33,6 +33,14 @@ export const softwareBatchC = {
     ],
     languages: ["Python"],
   },
+  "suno-api-cli": {
+    paragraphs: [
+      "suno-api-cli es un cliente no oficial de línea de comandos, escrito en Node.js, para generar y gestionar música mediante un backend local de Suno API.",
+      "Permite configurar la sesión del navegador, consultar créditos, generar pistas y listar o descargar canciones; sus comandos devuelven JSON para scripts y agentes.",
+      "El CLI ejecuta el backend en local y guarda las credenciales de sesión en el equipo. La resolución opcional de CAPTCHA con 2Captcha y la generación de canciones pueden consumir saldo y créditos de Suno.",
+    ],
+    languages: ["TypeScript", "Python", "JavaScript", "CSS"],
+  },
   "t3-chat-zipper": {
     paragraphs: [
       "t3-chat-zipper es un userscript que añade tres botones de exportación ZIP en t3.chat y automáticamente agrupa las vallas de código en archivos descargables.",

@@ -263,6 +263,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  "omp-multi-codex": {
+    repo: "Microck/omp-multi-codex",
+    sourceUrl: "https://github.com/Microck/omp-multi-codex",
+    livePreviewUrl: null,
+    isPrivate: false,
+  },
   "kefine-website": {
     repo: "Microck/kefine-website",
     sourceUrl: "https://github.com/Microck/kefine-website",
@@ -273,6 +279,12 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     repo: "Microck/keyflare-qmk-tool",
     sourceUrl: "https://github.com/Microck/keyflare-qmk-tool",
     livePreviewUrl: null,
+    isPrivate: false,
+  },
+  "keygen-bench": {
+    repo: "Microck/keygen-bench",
+    sourceUrl: "https://github.com/Microck/keygen-bench",
+    livePreviewUrl: "https://keygen.micr.dev",
     isPrivate: false,
   },
   "m-d/micr.dev": {
@@ -378,6 +390,13 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     livePreviewUrl: null,
     isPrivate: false,
   },
+  raft: {
+    repo: "Microck/raft",
+    sourceUrl: "https://github.com/Microck/raft",
+    livePreviewUrl: "https://raft.micr.dev",
+    livePreviewLabel: "Read docs",
+    isPrivate: false,
+  },
   "rental-search": {
     repo: "Microck/rental-search",
     sourceUrl: "https://github.com/Microck/rental-search",
@@ -413,6 +432,13 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     repo: "Microck/scudo",
     sourceUrl: "https://github.com/Microck/scudo",
     livePreviewUrl: null,
+    isPrivate: false,
+  },
+  "semrush-cli": {
+    repo: "Microck/semrush-cli",
+    sourceUrl: "https://github.com/Microck/semrush-cli",
+    livePreviewUrl: "https://semrush.micr.dev",
+    livePreviewLabel: "Read docs",
     isPrivate: false,
   },
   "simple-pool": {
@@ -461,6 +487,13 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     repo: "Microck/supabase-keep-alive",
     sourceUrl: "https://github.com/Microck/supabase-keep-alive",
     livePreviewUrl: null,
+    isPrivate: false,
+  },
+  "suno-api-cli": {
+    repo: "Microck/suno-api-cli",
+    sourceUrl: "https://github.com/Microck/suno-api-cli",
+    livePreviewUrl: "https://www.npmjs.com/package/suno-api-cli",
+    livePreviewLabel: "View package",
     isPrivate: false,
   },
   "t3-chat-zipper": {
