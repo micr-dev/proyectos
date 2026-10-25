@@ -1,6 +1,14 @@
 import type { RepoDescription } from "../repo-description-types";
 
 export const softwareBatchC = {
+  "elevenlabs-cli": {
+    paragraphs: [
+      "ElevenLabs CLI lleva las herramientas de audio de la aplicación web de ElevenLabs al terminal mediante una sesión importada del navegador.",
+      "Permite explorar voces, generar voz y diálogos, crear efectos de sonido y descargar audio sin una clave de API de desarrollador.",
+      "La CLI en Go usa Galleton para gestionar la sesión, transmite audio a un archivo o a la salida estándar y devuelve JSON por defecto para scripts y agentes.",
+    ],
+    languages: ["Go", "TypeScript", "JavaScript", "MDX", "CSS", "Makefile"],
+  },
   "calendar-peek-extension": {
     paragraphs: [
       "Calendar Peek es una extensión para Chromium que consulta la disponibilidad del calendario de un compañero desde las tarjetas de perfil de Google Workspace o la aplicación web de Slack.",
