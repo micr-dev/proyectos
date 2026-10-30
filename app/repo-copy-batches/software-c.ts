@@ -17,6 +17,14 @@ export const softwareBatchC = {
     ],
     languages: ["JavaScript", "CSS", "HTML"],
   },
+  lsops: {
+    paragraphs: [
+      "lsops es una CLI escrita en Go para catalogar las herramientas de línea de comandos disponibles para agentes de programación. Cada entrada documenta qué hace un comando y puede incluir por qué y cuándo conviene usarlo.",
+      "Los agentes no siempre conocen las utilidades instaladas en el entorno y repetir esa lista en cada prompt deja el contexto desactualizado. lsops separa el registro de la comprobación de disponibilidad, sin ejecutar comandos al listar o detectar herramientas.",
+      "El catálogo se guarda en JSON y se añade al contexto mediante hooks para Claude Code, Codex, Gemini, Cursor, Copilot, OpenCode y OMP. Los catálogos de proyecto solo se cargan tras registrarlos explícitamente.",
+    ],
+    languages: ["Go", "Shell", "PowerShell", "Python"],
+  },
   squircle: {
     paragraphs: [
       "Squircle es una aplicación Next.js que te permite soltar imágenes o GIFs, ajustar el radio de las esquinas, las sombras, los contornos y exportar archivos con esquinas transparentes sin enviar nada a un servidor.",
@@ -227,11 +235,11 @@ export const softwareBatchC = {
   },
   "rosario": {
     paragraphs: [
-      "Rosario es un asistente de voz para el sector sanitario, diseñado para ayudar a las clínicas a gestionar conversaciones sobre citas de pacientes.",
-      "Su objetivo es reducir el trabajo administrativo rutinario y facilitar la coordinación de citas para pacientes y personal clínico.",
-      "Rosario está en desarrollo activo como producto comercial.",
+      "Rosario es una recepcionista de voz para clínicas que atiende llamadas telefónicas y desde el navegador en el idioma de quien llama. Identifica pacientes, busca disponibilidad y reserva, cambia o cancela citas.",
+      "Una consola en React permite al personal revisar grabaciones, transcripciones, decisiones de las herramientas y un calendario compartido de citas. Los pacientes y los cambios confirmados se conservan entre llamadas.",
+      "Creado para la competición HackSpain Prosper con un backend en Python y FastAPI, flujos de voz con Pipecat, GPT-Live y una interfaz React. La demo funciona en un solo servidor y guarda los datos clínicos en SQLite.",
     ],
-    languages: [],
+    languages: ["Python", "TypeScript", "CSS", "HTML", "JavaScript", "Shell"],
   },
   "wallapop-cli": {
     paragraphs: [
