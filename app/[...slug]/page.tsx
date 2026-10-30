@@ -35,7 +35,6 @@ export default async function RepoSlugPage({ params }: SlugPageProps) {
   return (
     <PortfolioShell
       sections={sections}
-      preloaderText="Convirtiendo conceptos en sistemas funcionales."
       initialSlug={slugPath}
     />
   );

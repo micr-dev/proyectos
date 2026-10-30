@@ -8,7 +8,6 @@ import type { RepoSection } from "./repo-sections";
 
 interface PortfolioShellProps {
   initialSlug?: string | null;
-  preloaderText?: string;
   sections: RepoSection[];
 }
 
@@ -16,7 +15,6 @@ const INITIAL_PRELOAD_COUNT = 12;
 
 const PortfolioShell = ({
   initialSlug = null,
-  preloaderText = "Convirtiendo conceptos en sistemas funcionales.",
   sections,
 }: PortfolioShellProps) => {
   const preloadTiers = useMemo(
@@ -30,7 +28,7 @@ const PortfolioShell = ({
   );
 
   return (
-    <Skiper10 text={preloaderText} preloadTiers={preloadTiers}>
+    <Skiper10 preloadTiers={preloadTiers}>
       <Skiper80 sections={sections} initialSlug={initialSlug} />
     </Skiper10>
   );

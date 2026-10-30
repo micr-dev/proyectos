@@ -1,4 +1,5 @@
 export interface RepoMetadata {
+  archived?: boolean;
   isPrivate: boolean;
   livePreviewUrl: string | null;
   livePreviewLabel?: string;
@@ -39,24 +40,28 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: true,
   },
   "m-d/about": {
+    archived: true,
     repo: "micr-dev/about",
     sourceUrl: "https://github.com/micr-dev/about",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "m-d/ai": {
+    archived: true,
     repo: "micr-dev/ai",
     sourceUrl: "https://github.com/micr-dev/ai",
     livePreviewUrl: null,
     isPrivate: false,
   },
   anonQ: {
+    archived: true,
     repo: "Microck/anonQ",
     sourceUrl: "https://github.com/Microck/anonQ",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "anydesk-legacy-bin": {
+    archived: true,
     repo: "Microck/anydesk-legacy-bin",
     sourceUrl: "https://github.com/Microck/anydesk-legacy-bin",
     livePreviewUrl: "https://aur.archlinux.org/packages/anydesk-legacy-bin",
@@ -64,36 +69,42 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   amigazo: {
+    archived: true,
     repo: "Microck/amigazo",
     sourceUrl: "https://github.com/Microck/amigazo",
     livePreviewUrl: null,
     isPrivate: false,
   },
   archie: {
+    archived: true,
     repo: "Microck/archie",
     sourceUrl: "https://github.com/Microck/archie",
     livePreviewUrl: null,
     isPrivate: true,
   },
   "ms26/bansho": {
+    archived: true,
     repo: "Microck/bansho",
     sourceUrl: "https://github.com/Microck/bansho",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "bdss-club-website": {
+    archived: true,
     repo: "Microck/bdss-club-website",
     sourceUrl: "https://github.com/Microck/bdss-club-website",
     livePreviewUrl: "https://bdss-club-website.vercel.app",
     isPrivate: true,
   },
   "m-d/blog": {
+    archived: true,
     repo: "micr-dev/blog",
     sourceUrl: "https://github.com/micr-dev/blog",
     livePreviewUrl: null,
     isPrivate: false,
   },
   bettersaves: {
+    archived: true,
     repo: "Microck/bettersaves",
     sourceUrl: "https://github.com/Microck/bettersaves",
     livePreviewUrl: null,
@@ -106,12 +117,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "calendar-peek-extension": {
+    archived: true,
     repo: "Microck/calendar-peek-extension",
     sourceUrl: "https://github.com/Microck/calendar-peek-extension",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "Celeste-QuartzSkin": {
+    archived: true,
     repo: "Microck/Celeste-QuarziteSkin",
     sourceUrl: "https://github.com/Microck/Celeste-QuarziteSkin",
     livePreviewUrl: "https://gamebanana.com/mods/486547",
@@ -119,6 +132,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "cat-monitor": {
+    archived: true,
     repo: "Microck/cat-monitor",
     sourceUrl: "https://github.com/Microck/cat-monitor",
     livePreviewUrl: null,
@@ -143,6 +157,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   codexport: {
+    archived: true,
     repo: "Microck/codexport",
     sourceUrl: "https://github.com/Microck/codexport",
     livePreviewUrl: "https://www.npmjs.com/package/codexport",
@@ -156,6 +171,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "ms26/delvn": {
+    archived: true,
     repo: "Microck/delvn",
     sourceUrl: "https://github.com/Microck/delvn",
     livePreviewUrl: null,
@@ -180,12 +196,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "elevenlabs-webui": {
+    archived: true,
     repo: "Microck/elevenlabs-webui-client",
     sourceUrl: "https://github.com/Microck/elevenlabs-webui-client",
     livePreviewUrl: null,
     isPrivate: false,
   },
   glob: {
+    archived: true,
     repo: "Microck/glob",
     sourceUrl: "https://github.com/Microck/glob",
     livePreviewUrl: null,
@@ -216,18 +234,21 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "glm-quota-widget": {
+    archived: true,
     repo: "Microck/glm-quota-widget",
     sourceUrl: "https://github.com/Microck/glm-quota-widget",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "goofish-watcher": {
+    archived: true,
     repo: "Microck/goofish-watcher",
     sourceUrl: "https://github.com/Microck/goofish-watcher",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "hermes-nightshift": {
+    archived: true,
     repo: "Microck/hermes-nightshift-glm",
     sourceUrl: "https://github.com/Microck/hermes-nightshift-glm",
     livePreviewUrl: null,
@@ -240,12 +261,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "hermes-dayshift": {
+    archived: true,
     repo: "Microck/hermes-dayshift-glm",
     sourceUrl: "https://github.com/Microck/hermes-dayshift-glm",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "ms26/indagine": {
+    archived: true,
     repo: "Microck/indagine",
     sourceUrl: "https://github.com/Microck/indagine",
     livePreviewUrl: null,
@@ -264,24 +287,28 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "omp-kagi-cli": {
+    archived: true,
     repo: "Microck/omp-kagi-cli",
     sourceUrl: "https://github.com/Microck/omp-kagi-cli",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "omp-multi-codex": {
+    archived: true,
     repo: "Microck/omp-multi-codex",
     sourceUrl: "https://github.com/Microck/omp-multi-codex",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "kefine-website": {
+    archived: true,
     repo: "Microck/kefine-website",
     sourceUrl: "https://github.com/Microck/kefine-website",
     livePreviewUrl: "https://kefine.store",
     isPrivate: true,
   },
   "keyflare-qmk-tool": {
+    archived: true,
     repo: "Microck/keyflare-qmk-tool",
     sourceUrl: "https://github.com/Microck/keyflare-qmk-tool",
     livePreviewUrl: null,
@@ -294,12 +321,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "m-d/micr.dev": {
+    archived: true,
     repo: "micr-dev/micr.dev",
     sourceUrl: "https://github.com/micr-dev/micr.dev",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "m-d/microkeebs": {
+    archived: true,
     repo: "micr-dev/microkeebs",
     sourceUrl: "https://github.com/micr-dev/microkeebs",
     livePreviewUrl: null,
@@ -312,6 +341,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   md2pkt: {
+    archived: true,
     repo: "Microck/md2pkt",
     sourceUrl: "https://github.com/Microck/md2pkt",
     livePreviewUrl: null,
@@ -324,6 +354,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "mic-hotkey-remapper": {
+    archived: true,
     repo: "Microck/mic-hotkey-remapper",
     sourceUrl: "https://github.com/Microck/mic-hotkey-remapper",
     livePreviewUrl: null,
@@ -349,6 +380,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   onairo: {
+    archived: true,
     repo: "Microck/onairo",
     sourceUrl: "https://github.com/Microck/onairo",
     livePreviewUrl: null,
@@ -379,18 +411,21 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   protoncode: {
+    archived: true,
     repo: "Microck/protoncode",
     sourceUrl: "https://github.com/Microck/protoncode",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "m-d/quarzite": {
+    archived: true,
     repo: "micr-dev/quarzite",
     sourceUrl: "https://github.com/micr-dev/quarzite",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "ms26/repatrol": {
+    archived: true,
     repo: "Microck/repatrol",
     sourceUrl: "https://github.com/Microck/repatrol",
     livePreviewUrl: null,
@@ -404,6 +439,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "rental-search": {
+    archived: true,
     repo: "Microck/rental-search",
     sourceUrl: "https://github.com/Microck/rental-search",
     livePreviewUrl: null,
@@ -416,18 +452,21 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "remind-me-later": {
+    archived: true,
     repo: "Microck/remind-me-later",
     sourceUrl: "https://github.com/Microck/remind-me-later",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "rosario": {
+    archived: true,
     repo: "Microck/rosario",
     sourceUrl: "https://github.com/Microck/rosario",
     livePreviewUrl: "https://rosario.fyi",
     isPrivate: true,
   },
   revisor: {
+    archived: true,
     repo: "Microck/revisor",
     sourceUrl: "https://github.com/Microck/revisor",
     livePreviewUrl: "https://www.npmjs.com/package/@microck/revisor",
@@ -435,6 +474,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   scudo: {
+    archived: true,
     repo: "Microck/scudo",
     sourceUrl: "https://github.com/Microck/scudo",
     livePreviewUrl: null,
@@ -448,30 +488,35 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "simple-pool": {
+    archived: true,
     repo: "Microck/simple-pool",
     sourceUrl: "https://github.com/Microck/simple-pool",
     livePreviewUrl: null,
     isPrivate: false,
   },
   solecist: {
+    archived: true,
     repo: "Microck/solecist",
     sourceUrl: "https://github.com/Microck/solecist",
     livePreviewUrl: null,
     isPrivate: true,
   },
   sincronizado: {
+    archived: true,
     repo: "Microck/sincronizado",
     sourceUrl: "https://github.com/Microck/sincronizado",
     livePreviewUrl: null,
     isPrivate: false,
   },
   SpainGPT: {
+    archived: true,
     repo: "Microck/SpainGPT",
     sourceUrl: "https://github.com/Microck/SpainGPT",
     livePreviewUrl: null,
     isPrivate: true,
   },
   "ms26/spikehound": {
+    archived: true,
     repo: "Microck/spikehound",
     sourceUrl: "https://github.com/Microck/spikehound",
     livePreviewUrl: null,
@@ -484,12 +529,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   syntaxis: {
+    archived: true,
     repo: "Microck/syntaxis-backend",
     sourceUrl: "https://github.com/Microck/syntaxis-backend",
     livePreviewUrl: null,
     isPrivate: true,
   },
   "supabase-keepalive": {
+    archived: true,
     repo: "Microck/supabase-keep-alive",
     sourceUrl: "https://github.com/Microck/supabase-keep-alive",
     livePreviewUrl: null,
@@ -503,6 +550,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "t3-chat-zipper": {
+    archived: true,
     repo: "Microck/t3-chat-zipper",
     sourceUrl: "https://github.com/Microck/t3-chat-zipper",
     livePreviewUrl:
@@ -523,24 +571,28 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "telnyx-voice-agent": {
+    archived: true,
     repo: "Microck/telnyx-voice-agent",
     sourceUrl: "https://github.com/Microck/telnyx-voice-agent",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "m-d/thinko": {
+    archived: true,
     repo: "micr-dev/thinko",
     sourceUrl: "https://github.com/micr-dev/thinko",
     livePreviewUrl: null,
     isPrivate: false,
   },
   tuireel: {
+    archived: true,
     repo: "Microck/tuireel",
     sourceUrl: "https://github.com/Microck/tuireel",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "m-d/tokens": {
+    archived: true,
     repo: "micr-dev/tokens",
     sourceUrl: "https://github.com/micr-dev/tokens",
     livePreviewUrl: null,
@@ -553,18 +605,21 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   tupac: {
+    archived: true,
     repo: "Microck/tupac",
     sourceUrl: "https://github.com/Microck/tupac",
     livePreviewUrl: null,
     isPrivate: false,
   },
   UndyingTerminal: {
+    archived: true,
     repo: "Microck/UndyingTerminal",
     sourceUrl: "https://github.com/Microck/UndyingTerminal",
     livePreviewUrl: "https://undyingterminal.com",
     isPrivate: false,
   },
   "upstash-keepalive": {
+    archived: true,
     repo: "Microck/upstash-keep-alive",
     sourceUrl: "https://github.com/Microck/upstash-keep-alive",
     livePreviewUrl: null,
@@ -583,12 +638,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   veyoff: {
+    archived: true,
     repo: "Microck/veyoff",
     sourceUrl: "https://github.com/Microck/veyoff",
     livePreviewUrl: null,
     isPrivate: false,
   },
   vss: {
+    archived: true,
     repo: "Microck/vss",
     sourceUrl: "https://github.com/Microck/vss",
     livePreviewUrl: null,
@@ -601,6 +658,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "waa-desktop-24": {
+    archived: true,
     repo: "Microck/waa-desktop-24",
     sourceUrl: "https://github.com/Microck/waa-desktop-24",
     livePreviewUrl: null,
@@ -643,6 +701,7 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "camofox-mcp": {
+    archived: true,
     repo: "Microck/camofox-browser-mcp",
     sourceUrl: "https://github.com/Microck/camofox-browser-mcp",
     livePreviewUrl: "https://www.npmjs.com/package/camofox-browser-mcp",
@@ -650,12 +709,14 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "catbox-mcp": {
+    archived: true,
     repo: "Microck/catbox-mcp",
     sourceUrl: "https://github.com/Microck/catbox-mcp",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "chatgpt-webui-mcp": {
+    archived: true,
     repo: "Microck/chatgpt-webui-mcp",
     sourceUrl: "https://github.com/Microck/chatgpt-webui-mcp",
     livePreviewUrl: null,
@@ -675,30 +736,35 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "ui-unslop": {
+    archived: true,
     repo: "Microck/ui-unslop",
     sourceUrl: "https://github.com/Microck/ui-unslop",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "gitquarry-mcp": {
+    archived: true,
     repo: "Microck/gitquarry-mcp",
     sourceUrl: "https://github.com/Microck/gitquarry-mcp",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "kagi-mcp": {
+    archived: true,
     repo: "Microck/kagi-mcp",
     sourceUrl: "https://github.com/Microck/kagi-mcp",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "namecheap-mcp": {
+    archived: true,
     repo: "Microck/namecheap-webui-mcp",
     sourceUrl: "https://github.com/Microck/namecheap-webui-mcp",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "perplexity-mcp": {
+    archived: true,
     repo: "Microck/perplexity-webui-mcp",
     sourceUrl: "https://github.com/Microck/perplexity-webui-mcp",
     livePreviewUrl: null,
@@ -717,18 +783,21 @@ export const repoMetadata: Record<string, RepoMetadata> = {
     isPrivate: false,
   },
   "grill-with-facts": {
+    archived: true,
     repo: "Microck/grill-with-facts",
     sourceUrl: "https://github.com/Microck/grill-with-facts",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "gsap-skills": {
+    archived: true,
     repo: "Microck/gsap-skills",
     sourceUrl: "https://github.com/Microck/gsap-skills",
     livePreviewUrl: null,
     isPrivate: false,
   },
   "seedance-skills": {
+    archived: true,
     repo: "Microck/seedance-skills",
     sourceUrl: "https://github.com/Microck/seedance-skills",
     livePreviewUrl: null,
