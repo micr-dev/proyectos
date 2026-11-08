@@ -86,6 +86,7 @@ squircle
 syntaxis
 supabase-keepalive
 t3-chat-zipper
+tabmap
 tailstick
 telnyx-voice-agent
 traccia
