@@ -17,6 +17,7 @@ Celeste-QuartzSkin
 cat-monitor
 chalcopyrite
 cinco
+cloudssh
 codex-live-voice
 codexport
 crabbox-template-boxes
