@@ -71,8 +71,9 @@ opencode-studio
 pangram-cli
 protoncode
 raft
-ravenbin-upload
+ravenbin-cli
 reddit-cli
+vinted-cli
 remind-me-later
 rental-search
 revisor
